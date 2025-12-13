@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSC 2025: Transformación Tecnológica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body class="antialiased">
+
+    <div class="relative bg-white overflow-hidden mb-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Hoja de Ruta Tecnológica</span>
+                            <span class="block gradient-text">ITSC 2025</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Un año de transformación digital, fortalecimiento de infraestructura crítica y desarrollo de sistemas internos para optimizar la gestión académica y administrativa.
+                        </p>
+                    </div>
+                </main>
+            </div>
+            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-gray-50 flex items-center justify-center">
+
+                 <div class="w-full h-64 sm:h-72 md:h-96 lg:h-full p-8 flex items-center justify-center">
+                    <div class="chart-container" style="max-height: 400px; max-width: 400px;">
+                        <canvas id="heroChart"></canvas>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-200 pb-2">Cronograma Maestro 2025</h2>
+            <p class="text-gray-600 mb-6 text-lg">
+                La planificación del 2025 abarca tres pilares fundamentales: Infraestructura Crítica, Desarrollos Internos y Seguridad Institucional. Este cronograma visualiza la ejecución simultánea de proyectos de alto impacto, desde la adquisición de hardware en el primer trimestre hasta la implementación continua de sistemas de gestión durante todo el año.
+            </p>
+            
+            <div class="card w-full">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Línea de Tiempo de Ejecución de Proyectos</h3>
+                <div class="chart-container gantt-height w-full">
+                    <canvas id="ganttChart"></canvas>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-4 justify-center text-sm text-gray-600">
+                    <div class="flex items-center"><span class="w-3 h-3 bg-indigo-600 rounded-full mr-2"></span>Infraestructura</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-cyan-500 rounded-full mr-2"></span>Desarrollos</div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>Seguridad</div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-200 pb-2">Modernización de Laboratorios</h2>
+            <p class="text-gray-600 mb-6 text-lg">
+                Se adquirieron 315 computadoras de última generación para fortalecer 19 laboratorios especializados y áreas administrativas neurálgicas. Esta inversión busca elevar la calidad de la enseñanza en áreas clave como Diseño Gráfico, Informática e Industria.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              
+                <div class="card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Distribución de Nuevos Equipos por Laboratorio</h3>
+                    <p class="text-sm text-gray-500 mb-4">Cantidad de computadoras nuevas instaladas en laboratorios principales.</p>
+                    <div class="chart-container">
+                        <canvas id="labComputersChart"></canvas>
+                    </div>
+                </div>
+
+          
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-emerald-500">
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">Total Equipos Nuevos</h4>
+                        <p class="text-4xl font-bold text-gray-900">315</p>
+                        <p class="text-gray-600 text-sm mt-1">Computadoras de última generación</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-indigo-500">
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">UPS Trifásicos</h4>
+                        <p class="text-4xl font-bold text-gray-900">6</p>
+                        <p class="text-gray-600 text-sm mt-1">Unidades de 20 kVA instaladas</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-cyan-500">
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">Impresoras</h4>
+                        <p class="text-4xl font-bold text-gray-900">41</p>
+                        <p class="text-gray-600 text-sm mt-1">Nuevas unidades departamentales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-200 pb-2">Aulas Inteligentes</h2>
+            <p class="text-gray-600 mb-6 text-lg">
+                El proyecto de Pantallas Interactivas contempla la instalación de 100 unidades. A la fecha, se ha completado la Fase 1 con 50 pantallas operativas en diversos edificios. La Fase 2 está programada para 2026 tras resolver adecuaciones de infraestructura eléctrica y física.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+               
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Estado de Implementación</h3>
+                    <div class="chart-container">
+                        <canvas id="screensStatusChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Pantallas Instaladas por Edificio (Fase 1)</h3>
+                    <div class="chart-container">
+                        <canvas id="screensBuildingChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-200 pb-2">Ecosistema de Software y Desarrollos</h2>
+            <p class="text-gray-600 mb-6 text-lg">
+                Paralelamente al hardware, se ha robustecido el ecosistema de software con licencias críticas (Adobe, Office 365, Veeam) y una batería de desarrollos internos enfocados en la transparencia, gestión académica y salud.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+                <div class="card lg:col-span-1">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Hitos de Software</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item">
+                            <h4 class="font-bold text-gray-800">Adobe Creative Cloud</h4>
+                            <p class="text-sm text-gray-600">115 licencias "All Apps" para diseño y multimedia.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-bold text-gray-800">Office 365 A3</h4>
+                            <p class="text-sm text-gray-600">Renovación de 700 licencias para personal y docentes.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-bold text-gray-800">Seguridad y Respaldo</h4>
+                            <p class="text-sm text-gray-600">Veeam Backup & Replication implementado.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-bold text-gray-800">Especializado</h4>
+                            <p class="text-sm text-gray-600">Adquisición de SketchUp, SolidWorks y Festo LX.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Impacto de Desarrollos Internos</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sistemas clave desarrollados por el equipo interno para cubrir necesidades específicas.</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">🏥</div>
+                            <div class="font-bold text-indigo-900 text-sm">ITSC SALUD</div>
+                            <div class="text-xs text-indigo-700">Gestión Pacientes</div>
+                        </div>
+                        <div class="bg-cyan-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">📊</div>
+                            <div class="font-bold text-cyan-900 text-sm">Dashboard</div>
+                            <div class="text-xs text-cyan-700">Estudiantes Activos</div>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">🗺️</div>
+                            <div class="font-bold text-amber-900 text-sm">InfraMap</div>
+                            <div class="text-xs text-amber-700">Gestión Defectos</div>
+                        </div>
+                        <div class="bg-emerald-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">💻</div>
+                            <div class="font-bold text-emerald-900 text-sm">Intranet</div>
+                            <div class="text-xs text-emerald-700">Gestión Interna</div>
+                        </div>
+                        <div class="bg-rose-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">📹</div>
+                            <div class="font-bold text-rose-900 text-sm">Video Vigilancia</div>
+                            <div class="text-xs text-rose-700">60 Cámaras IP</div>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">✒️</div>
+                            <div class="font-bold text-indigo-900 text-sm">Firma Digital</div>
+                            <div class="text-xs text-indigo-700">Gobierno Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">© 2025 ITSC - Dirección de Tecnologías de la Información. Todos los derechos reservados.</p>
+            <p class="text-gray-500 text-xs mt-2">Visualización generada basada en el Informe de Gestión y Proyectos 2025.</p>
+        </div>
+    </footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
