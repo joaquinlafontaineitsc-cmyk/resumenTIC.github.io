@@ -64,29 +64,34 @@
             </p>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              
+                <!-- Chart: Lab Distribution -->
                 <div class="card lg:col-span-2">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Distribución de Nuevos Equipos por Laboratorio</h3>
-                    <p class="text-sm text-gray-500 mb-4">Cantidad de computadoras nuevas instaladas en laboratorios principales.</p>
+                    <p class="text-sm text-gray-500 mb-4">Cantidad de computadoras nuevas instaladas en laboratorios principales (Total: 241 unidades).</p>
                     <div class="chart-container">
                         <canvas id="labComputersChart"></canvas>
                     </div>
                 </div>
 
-          
+                <!-- Stat Cards -->
                 <div class="space-y-6">
                     <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-emerald-500">
-                        <h4 class="text-gray-500 text-sm uppercase font-bold">Total Equipos Nuevos</h4>
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">Total Equipos Nuevos Adquiridos</h4>
                         <p class="text-4xl font-bold text-gray-900">315</p>
-                        <p class="text-gray-600 text-sm mt-1">Computadoras de última generación</p>
+                        <p class="text-gray-600 text-sm mt-1">Computadoras (Laboratorios + Admin)</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-cyan-500">
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">Total Equipos Nuevos en Labs</h4>
+                        <p class="text-4xl font-bold text-gray-900">241</p>
+                        <p class="text-gray-600 text-sm mt-1">Unidades de última generación instaladas</p>
                     </div>
                     <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-indigo-500">
                         <h4 class="text-gray-500 text-sm uppercase font-bold">UPS Trifásicos</h4>
                         <p class="text-4xl font-bold text-gray-900">6</p>
                         <p class="text-gray-600 text-sm mt-1">Unidades de 20 kVA instaladas</p>
                     </div>
-                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-cyan-500">
-                        <h4 class="text-gray-500 text-sm uppercase font-bold">Impresoras</h4>
+                    <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-amber-500">
+                        <h4 class="text-gray-500 text-sm uppercase font-bold">Impresoras Adquiridas</h4>
                         <p class="text-4xl font-bold text-gray-900">41</p>
                         <p class="text-gray-600 text-sm mt-1">Nuevas unidades departamentales</p>
                     </div>
@@ -119,17 +124,21 @@
             </div>
         </section>
 
-        <section class="mb-12">
+  <section class="mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-indigo-200 pb-2">Ecosistema de Software y Desarrollos</h2>
             <p class="text-gray-600 mb-6 text-lg">
-                Paralelamente al hardware, se ha robustecido el ecosistema de software con licencias críticas (Adobe, Office 365, Veeam) y una batería de desarrollos internos enfocados en la transparencia, gestión académica y salud.
+                Paralelamente al hardware, se ha robustecido el ecosistema de software con licencias críticas y una batería de desarrollos internos enfocados en la transparencia, gestión académica y salud.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+                <!-- Development Highlights List -->
                 <div class="card lg:col-span-1">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Hitos de Software</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Hitos de Software y Licencias</h3>
                     <div class="space-y-4">
+                        <div class="timeline-item">
+                            <h4 class="font-bold text-gray-800">Veeam Backup & Replication</h4>
+                            <p class="text-sm text-gray-600">Plataforma de respaldo implementada en Enero para asegurar la continuidad operativa.</p>
+                        </div>
                         <div class="timeline-item">
                             <h4 class="font-bold text-gray-800">Adobe Creative Cloud</h4>
                             <p class="text-sm text-gray-600">115 licencias "All Apps" para diseño y multimedia.</p>
@@ -139,38 +148,35 @@
                             <p class="text-sm text-gray-600">Renovación de 700 licencias para personal y docentes.</p>
                         </div>
                         <div class="timeline-item">
-                            <h4 class="font-bold text-gray-800">Seguridad y Respaldo</h4>
-                            <p class="text-sm text-gray-600">Veeam Backup & Replication implementado.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <h4 class="font-bold text-gray-800">Especializado</h4>
-                            <p class="text-sm text-gray-600">Adquisición de SketchUp, SolidWorks y Festo LX.</p>
+                            <h4 class="font-bold text-gray-800">Software Especializado</h4>
+                            <p class="text-sm text-gray-600">Adquisición de SketchUp, SolidWorks y Festo LX (simulación de electrónica).</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Development Timeline Chart (Simplified view of key devs) -->
                  <div class="card lg:col-span-2">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Impacto de Desarrollos Internos</h3>
-                    <p class="text-sm text-gray-500 mb-4">Sistemas clave desarrollados por el equipo interno para cubrir necesidades específicas.</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Impacto de Desarrollos Internos y Seguridad</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sistemas clave desarrollados o implementados por el equipo interno.</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                         <div class="bg-indigo-50 p-4 rounded-lg text-center">
                             <div class="text-2xl mb-1">🏥</div>
                             <div class="font-bold text-indigo-900 text-sm">ITSC SALUD</div>
                             <div class="text-xs text-indigo-700">Gestión Pacientes</div>
                         </div>
                         <div class="bg-cyan-50 p-4 rounded-lg text-center">
-                            <div class="text-2xl mb-1">📊</div>
-                            <div class="font-bold text-cyan-900 text-sm">Dashboard</div>
-                            <div class="text-xs text-cyan-700">Estudiantes Activos</div>
+                            <div class="text-2xl mb-1">💳</div>
+                            <div class="font-bold text-cyan-900 text-sm">Hub/SIRITE</div>
+                            <div class="text-xs text-cyan-700">Plataformas de Pago</div>
                         </div>
-                        <div class="bg-amber-50 p-4 rounded-lg text-center">
-                            <div class="text-2xl mb-1">🗺️</div>
-                            <div class="font-bold text-amber-900 text-sm">InfraMap</div>
-                            <div class="text-xs text-amber-700">Gestión Defectos</div>
+                         <div class="bg-amber-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">👤</div>
+                            <div class="font-bold text-amber-900 text-sm">Control Biométrico</div>
+                            <div class="text-xs text-amber-700">Acceso y Asistencia</div>
                         </div>
                         <div class="bg-emerald-50 p-4 rounded-lg text-center">
                             <div class="text-2xl mb-1">💻</div>
-                            <div class="font-bold text-emerald-900 text-sm">Intranet</div>
+                            <div class="font-bold text-emerald-900 text-sm">Intranet Admin</div>
                             <div class="text-xs text-emerald-700">Gestión Interna</div>
                         </div>
                         <div class="bg-rose-50 p-4 rounded-lg text-center">
@@ -182,6 +188,16 @@
                             <div class="text-2xl mb-1">✒️</div>
                             <div class="font-bold text-indigo-900 text-sm">Firma Digital</div>
                             <div class="text-xs text-indigo-700">Gobierno Digital</div>
+                        </div>
+                        <div class="bg-cyan-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">🌐</div>
+                            <div class="font-bold text-cyan-900 text-sm">Académusoft</div>
+                            <div class="text-xs text-cyan-700">Sistema Académico/Financiero</div>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl mb-1">🔒</div>
+                            <div class="font-bold text-amber-900 text-sm">Reestruct. Red</div>
+                            <div class="text-xs text-amber-700">Infraestructura y Seguridad</div>
                         </div>
                     </div>
                 </div>

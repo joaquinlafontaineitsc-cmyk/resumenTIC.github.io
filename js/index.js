@@ -68,6 +68,7 @@
         // Data derived from "proyectos_gantt.md"
         const ganttData = [
             // Infraestructura
+            { label: 'Veeam Backup & Replication', start: 1, end: 1.9, type: 'Infra' }, // NEW: Enero
             { label: 'Licencias Adobe CC', start: 1, end: 1.9, type: 'Infra' },
             { label: 'Renovación Office 365', start: 7, end: 7.9, type: 'Infra' },
             { label: 'Power BI', start: 7, end: 7.9, type: 'Infra' },
@@ -77,29 +78,33 @@
             { label: 'UPS Trifásicos', start: 3, end: 8, type: 'Infra' }, // Purchase to install
             { label: 'Pantallas (Compra)', start: 5, end: 7, type: 'Infra' },
             { label: 'Pantallas (Instalación)', start: 10, end: 11, type: 'Infra' },
+            { label: 'Reestruct. Red y Seguridad', start: 9, end: 11.9, type: 'Infra' }, // NEW: Licitacion Sep-Nov
             
             // Desarrollos
             { label: 'Portal Web Principal', start: 1, end: 2, type: 'Dev' },
             { label: 'Dashboard Estudiantes', start: 1, end: 1.9, type: 'Dev' },
             { label: 'InfraMap', start: 1, end: 1.9, type: 'Dev' },
             { label: 'Recepción Docs', start: 1, end: 1.9, type: 'Dev' },
+            { label: 'Plataforma Pago SIRITE', start: 2, end: 10, type: 'Dev' }, // NEW: Feb-Oct
             { label: 'Plug-in Transparencia', start: 3, end: 3.9, type: 'Dev' },
             { label: 'Mapa Origen Est.', start: 4, end: 4.9, type: 'Dev' },
             { label: 'Gestión Inventario', start: 5, end: 5.9, type: 'Dev' },
+            { label: 'Académusoft (U. Pamplona)', start: 6, end: 8, type: 'Dev' }, // NEW: Jun-Aug
             { label: 'Ejecución Presup.', start: 6, end: 6.9, type: 'Dev' },
+            { label: 'Hub Pagos Banreservas', start: 1, end: 11.9, type: 'Dev' }, // NEW: Ene-Nov
             { label: 'Intranet Admin', start: 8, end: 8.9, type: 'Dev' },
             { label: 'Carrusel Multi.', start: 8, end: 8.9, type: 'Dev' },
             { label: 'Reserva Auditorio', start: 9, end: 9.9, type: 'Dev' },
             { label: 'LabMap', start: 9, end: 9.9, type: 'Dev' },
             { label: 'Kiosko Preguntas', start: 10, end: 10.9, type: 'Dev' },
             { label: 'ITSC SALUD', start: 12, end: 12.9, type: 'Dev' },
-            { label: 'Eval. Desempeño', start: 1, end: 12, type: 'Dev' },
+            { label: 'Sistema Eval. Desempeño', start: 1, end: 12, type: 'Dev' },
 
             // Seguridad
-            { label: 'Video Vigilancia', start: 6, end: 11, type: 'Sec' },
-            { label: 'Firma Digital', start: 6, end: 11, type: 'Dev' },
-            { label: 'Control Biométrico', start: 8, end: 8.9, type: 'Sec' },
-            { label: 'NORTIC A2', start: 11, end: 11.9, type: 'Dev' }
+            { label: 'Video Vigilancia', start: 6, end: 11, type: 'Sec' }, // June to November start
+            { label: 'Firma Digital', start: 6, end: 11, type: 'Sec' }, // June to November deploy
+            { label: 'Control Biométrico', start: 8, end: 8.9, type: 'Sec' }, // Agosto
+            { label: 'NORTIC A2', start: 11, end: 11.9, type: 'Sec' } // Noviembre
         ];
 
         const ganttLabels = ganttData.map(d => wrapLabel(d.label));
@@ -151,7 +156,7 @@
 
         // 3. LAB COMPUTERS CHART
         const labDataRaw = [
-            { label: 'Diseño Gráfico 3', value: 27 },
+           { label: 'Diseño Gráfico 3', value: 27 },
             { label: 'Manufactura', value: 26 },
             { label: 'Fotografía', value: 23 },
             { label: 'Informática 1', value: 21 },
@@ -160,10 +165,9 @@
             { label: 'Redes', value: 21 },
             { label: 'Gaming', value: 21 },
             { label: 'Diseño Gráfico 1', value: 21 },
-            { label: 'Diseño Gráfico 2', value: 19 },
-            { label: 'Ind. Mueble', value: 17 },
-            { label: 'Máquinas', value: 16 }
-            // Filtered smaller ones for clarity
+            { label: 'Industria del mueble', value: 17 },
+            { label: 'Máquinas', value: 16 },
+            { label: 'Electricidad', value: 6 } // New entry with 6 new computers
         ];
         
         const labLabels = labDataRaw.map(d => wrapLabel(d.label));
@@ -220,16 +224,16 @@
         // 5. SCREENS BY BUILDING (Bar)
         // Data from PDF Page 4
         const buildingData = [
-            { label: 'Edificio A', value: 3 },
-            { label: 'Edificio B', value: 7 }, // 2 (lvl2) + 5 (lvl3)
-            { label: 'Edificio D', value: 7 }, // 4 (lvl3) + 3 (lvl2)
+ { label: 'Edificio A', value: 10 },
+            { label: 'Edificio B', value: 7 },
+            { label: 'Edificio D', value: 7 },
             { label: 'Edificio E', value: 3 },
-            { label: 'Edificio G2', value: 8 }, // 2 (lvl1) + 4 (lvl2) + 2 (lvl3)
+            { label: 'Edificio G2', value: 8 },
             { label: 'Edificio G1', value: 1 },
             { label: 'Edificio H', value: 1 },
-            { label: 'Edificio I', value: 2 }, // 1 (lvl1) + 1 (lvl3)
-            { label: 'Edificio J', value: 3 }, // 3 (lvl2)
-            { label: 'Edificio K', value: 6 }, // 3 (lvl1) + 3 (lvl2)
+            { label: 'Edificio I', value: 2 },
+            { label: 'Edificio J', value: 3 },
+            { label: 'Edificio K', value: 6 },
             { label: 'Edificio M', value: 2 }
         ];
 
