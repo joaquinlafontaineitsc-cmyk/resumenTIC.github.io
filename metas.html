@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Planificación 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 h-screen flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center flex-shrink-0 z-10 shadow-sm">
+        <div class="flex items-center gap-3">
+            <div class="bg-blue-600 p-2 rounded-lg">
+                <i data-lucide="layout-dashboard" class="text-white w-6 h-6"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-gray-900">Plan Operativo Anual 2026</h1>
+                <p class="text-xs text-gray-500">Tablero de Gestión de Productos y Metas</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="text-right hidden sm:block">
+                <p class="text-xs text-gray-400 font-semibold uppercase">Presupuesto General</p>
+                <p class="text-lg font-bold text-gray-900" id="header-total-budget">RD$ 0.00</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="flex-1 overflow-x-auto overflow-y-hidden p-6">
+        <div class="flex h-full gap-6" id="board-container">
+            <!-- Las columnas se generarán aquí con JS -->
+        </div>
+    </div>
+
+    <!-- Script de Datos y Renderizado -->
+    <script>
+        // --- DATOS (Mismos que el archivo React anterior) ---
+        const rawData = [
+            // TIC
+            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Conectividad y Seguridad de Red", costo: 136000000 },
+            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Adecuación de equipos y licencias", costo: 35000000 },
+            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Transformación digital de procesos", costo: 25000000 },
+            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Optimización de Data Center Core", costo: 5000000 },
+            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Desarrollo de nuevos software", costo: 0 },
+            
+            // I+D+i
+            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Proyectos de Innovación Tecnológica", costo: 3200000 },
+            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Fomento a la Investigación", costo: 2500000 },
+            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Capacitación Metodología Inv.", costo: 1000000 },
+            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Revista Científica Institucional", costo: 800000 },
+
+            // Comunicaciones
+            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Campañas Publicidad y RRPP", costo: 1500000 },
+            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Contenidos audiovisuales", costo: 1200000 },
+            { meta: "Calidad de la comunicación", area: "Protocolo", producto: "Eventos institucionales", costo: 1186600 },
+            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Redes Sociales y Monitoreo", costo: 800000 },
+            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Ruedas de Prensa", costo: 500000 },
+            
+            // Vinculación
+            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Educación Continua", costo: 2800000 },
+            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Extensión Comunitaria", costo: 2200000 },
+            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Pasantías y Colocación", costo: 1500000 },
+            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Acuerdos Sector Productivo", costo: 600000 },
+
+            // Académica
+            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Rediseño Curricular Digital", costo: 13530000 },
+            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Certificaciones Internacionales", costo: 4380450 },
+            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Campus Inclusivo (NEE)", costo: 4500000 },
+            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Innovación Educativa ABP", costo: 3000000 },
+            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Optimización de Graduación", costo: 800000 },
+
+            // Administrativa
+            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Gestión de inventario", costo: 0 },
+            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Clasificación Documental", costo: 0 },
+            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Procesos Ley 47-25", costo: 0 },
+            { meta: "Calidad de la gestión financiera y administrativa", area: "OAI", producto: "Portal de Transparencia", costo: 0 },
+
+            // Seguridad
+            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Videovigilancia", costo: 0 },
+            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Remodelación Casa Guardia", costo: 0 },
+            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Personal nocturno", costo: 0 }
+        ];
+
+        // --- LÓGICA DE PROCESAMIENTO ---
+
+        // 1. Agrupar por Meta
+        const metasGrouped = rawData.reduce((acc, item) => {
+            if (!acc[item.meta]) {
+                acc[item.meta] = {
+                    title: item.meta,
+                    total: 0,
+                    products: []
+                };
+            }
+            acc[item.meta].products.push(item);
+            acc[item.meta].total += item.costo;
+            return acc;
+        }, {});
+
+        // 2. Calcular Total General
+        const grandTotal = rawData.reduce((sum, item) => sum + item.costo, 0);
+        document.getElementById('header-total-budget').innerText = `RD$ ${grandTotal.toLocaleString('es-DO', {minimumFractionDigits: 2})}`;
+
+        // 3. Renderizar Tablero
+        const boardContainer = document.getElementById('board-container');
+        
+        // Colores para las etiquetas de las áreas
+        const areaColors = {
+            "Tecnología (TIC)": "bg-blue-100 text-blue-700 border-blue-200",
+            "I+D+i": "bg-purple-100 text-purple-700 border-purple-200",
+            "Comunicaciones": "bg-orange-100 text-orange-700 border-orange-200",
+            "Protocolo": "bg-orange-50 text-orange-600 border-orange-200",
+            "Vinculación": "bg-green-100 text-green-700 border-green-200",
+            "Académica": "bg-indigo-100 text-indigo-700 border-indigo-200",
+            "Administrativa": "bg-gray-100 text-gray-700 border-gray-200",
+            "OAI": "bg-gray-100 text-gray-600 border-gray-200",
+            "Seguridad": "bg-red-100 text-red-700 border-red-200"
+        };
+
+        Object.values(metasGrouped).forEach(metaGroup => {
+            // Crear Columna
+            const column = document.createElement('div');
+            column.className = "flex flex-col w-80 min-w-[320px] bg-gray-50 rounded-xl border border-gray-200 shadow-sm max-h-full";
+            
+            // Header de Columna
+            const header = `
+                <div class="p-4 border-b border-gray-200 bg-white rounded-t-xl sticky top-0 z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-sm text-gray-800 leading-tight line-clamp-2" title="${metaGroup.title}">${metaGroup.title}</h3>
+                        <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded-full">${metaGroup.products.length}</span>
+                    </div>
+                    <div class="text-xs text-gray-500 font-medium">
+                        Presupuesto: <span class="text-gray-900 font-bold">RD$ ${metaGroup.total.toLocaleString('es-DO', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                        <div class="bg-blue-600 h-1.5 rounded-full" style="width: ${Math.min((metaGroup.total / 50000000) * 100, 100)}%"></div>
+                    </div>
+                </div>
+            `;
+
+            // Cuerpo de Columna (Lista de Productos)
+            const productsContainer = document.createElement('div');
+            productsContainer.className = "p-3 overflow-y-auto custom-scrollbar flex-1 space-y-3";
+
+            metaGroup.products.forEach(prod => {
+                const colorClass = areaColors[prod.area] || "bg-gray-100 text-gray-600 border-gray-200";
+                
+                const card = `
+                    <div class="bg-white p-3 rounded-lg border border-gray-200 shadow-sm card-hover transition-all duration-200 cursor-default group relative">
+                        <div class="mb-2">
+                            <span class="text-[10px] font-semibold px-2 py-0.5 rounded border ${colorClass}">
+                                ${prod.area}
+                            </span>
+                        </div>
+                        <p class="text-sm font-medium text-gray-800 mb-3 leading-snug">${prod.producto}</p>
+                        
+                        <div class="flex justify-between items-center pt-2 border-t border-gray-50 mt-2">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="coins" class="w-3 h-3 text-gray-400"></i>
+                                <span class="text-xs font-bold ${prod.costo > 0 ? 'text-gray-700' : 'text-orange-500'}">
+                                    ${prod.costo > 0 ? '$ ' + prod.costo.toLocaleString('es-DO') : 'Por definir'}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productsContainer.innerHTML += card;
+            });
+
+            column.innerHTML = header;
+            column.appendChild(productsContainer);
+            boardContainer.appendChild(column);
+        });
+
+        // Inicializar Iconos
+        lucide.createIcons();
+
+    </script>
+</body>
+</html>
