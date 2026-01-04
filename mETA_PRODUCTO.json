@@ -18,49 +18,49 @@
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Inventario de la documentación existente en el ITSC",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Identificación de series documentales",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Elaboración del Cuadro de Clasificación Documental",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Elaboración de la Tabla de Retención Documental",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Ejecución de procesos según Ley 47-25 (Compras)",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Gestión de expedientes de compras auditables",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Política de Compras y Contrataciones Institucional",
     "area": "Administrativa",
     "costo": 0
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Optimización de servicios de transportación",
     "area": "Administrativa",
     "costo": 0
@@ -72,7 +72,7 @@
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Fortalecimiento de gestión de inventario (Almacén)",
     "area": "Administrativa",
     "costo": 0
@@ -132,13 +132,13 @@
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Formulación Anteproyecto Presupuesto Plurianual 2027",
     "area": "Planificación",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Elaboración del Plan Anual de Compras (PACC) 2027",
     "area": "Planificación",
     "costo": 0
@@ -186,7 +186,7 @@
     "costo": 0
   },
   {
-    "meta": "Fortalecer alianzas",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Soporte en Acuerdos de Cooperación Internacional",
     "area": "Planificación",
     "costo": 0
@@ -252,13 +252,13 @@
     "costo": 3000000
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Servicios notariales y contratos de compras",
     "area": "Jurídica",
     "costo": 354000
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Servicios judiciales (Alguacil, certificaciones)",
     "area": "Jurídica",
     "costo": 120000
@@ -276,49 +276,49 @@
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Reportes mensuales al Portal de Transparencia",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Monitoreo del Indicador de Gestión Presupuestaria",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Certificaciones DIGEPRES para nuevo ingreso",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Rotulación y registro de activos en SIAB",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Levantamientos de activos fijos (DIGECOG)",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Depósitos diarios de ingresos en Banreservas",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Cumplimiento de normativas contables",
     "area": "Financiera",
     "costo": 0
   },
   {
-    "meta": "Calidad de la gestión financiera",
+    "meta": "Calidad de la gestión administrativa y financiera",
     "producto": "Envío de reportes de cierre a entes reguladores",
     "area": "Financiera",
     "costo": 0
@@ -384,31 +384,31 @@
     "costo": 0
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Infraestructura de Conectividad y Seguridad de Red",
     "area": "Tecnología (TIC)",
     "costo": 136000000
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Optimización de Data Center Core",
     "area": "Tecnología (TIC)",
     "costo": 5000000
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Transformación digital de procesos",
     "area": "Tecnología (TIC)",
     "costo": 25000000
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Adecuación de equipos y licencias (Laboratorios)",
     "area": "Tecnología (TIC)",
     "costo": 35000000
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Desarrollo e implementación de nuevos software",
     "area": "Tecnología (TIC)",
     "costo": 0
@@ -426,7 +426,7 @@
     "costo": 800000
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
+    "meta": "Calidad de la comunicación",
     "producto": "Campañas de Publicidad y Relaciones Públicas",
     "area": "Comunicaciones",
     "costo": 1500000
@@ -462,25 +462,25 @@
     "costo": 1000000
   },
   {
-    "meta": "Fortalecer alianzas",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Programa de Pasantías y Colocación Laboral",
     "area": "Vinculación",
     "costo": 1500000
   },
   {
-    "meta": "Fortalecer alianzas",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Acuerdos de Cooperación con el Sector Productivo",
     "area": "Vinculación",
     "costo": 600000
   },
   {
-    "meta": "Fortalecer alianzas",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Programas de Educación Continua y Capacitación",
     "area": "Vinculación",
     "costo": 2800000
   },
   {
-    "meta": "Fortalecer alianzas",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Proyectos de Extensión Comunitaria",
     "area": "Vinculación",
     "costo": 2200000
@@ -522,7 +522,7 @@
     "costo": 8000000
   },
   {
-    "meta": "Calidad de los laboratorios, equipamiento",
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Equipamiento Tecnológico (Diseño, Videojuegos)",
     "area": "Académica",
     "costo": 28940763

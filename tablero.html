@@ -94,151 +94,14 @@
         </div>
 
         <footer class="text-center text-gray-400 text-sm py-8 border-t border-gray-200">
-            <p>© 2026 Planificación Institucional - Generado dinámicamente</p>
+            <p>Instituto Técnico Superior Comunitario</p>
         </footer>
 
     </div>
 
+    <script src="./datos.js"></script>
     <script>
-        // --- DATOS COMPLETOS ---
-        const data = [
-            // GRUPO 1: CON PRESUPUESTO Y PRODUCTOS
-            {
-                id: 1,
-                meta: "Calidad de los laboratorios y equipamiento tecnológico",
-                descripcion: "Modernización de infraestructura tecnológica y digitalización.",
-                icon: "wifi",
-                theme: "blue",
-                areas: ["Tecnología (TIC)"],
-                productos: [
-                    { nombre: "Conectividad y Seguridad de Red", costo: 136000000 },
-                    { nombre: "Adecuación de equipos y licencias", costo: 35000000 },
-                    { nombre: "Transformación digital de procesos", costo: 25000000 },
-                    { nombre: "Optimización de Data Center Core", costo: 5000000 },
-                    { nombre: "Desarrollo de nuevos software", costo: 0 }
-                ]
-            },
-            {
-                id: 7, // Vicerrectoría Académica (Nueva)
-                meta: "Calidad Académica y mejora de la gestión",
-                descripcion: "Excelencia en los procesos de enseñanza y aprendizaje.",
-                icon: "graduation-cap",
-                theme: "indigo",
-                areas: ["Vicerrectoría Académica"],
-                productos: [
-                    { nombre: "Rediseño Curricular Digital (50%)", costo: 13530000 },
-                    { nombre: "Campus Inclusivo y formación NEE", costo: 4500000 },
-                    { nombre: "Certificaciones Internacionales (578)", costo: 4380450 },
-                    { nombre: "Innovación Educativa ABP y Ferias", costo: 3000000 },
-                    { nombre: "Optimización de Graduación", costo: 800000 },
-                    { nombre: "Acreditación IBEC", costo: 403200 }
-                ]
-            },
-            {
-                id: 2,
-                meta: "Consolidar el Ecosistema I+D+I+E",
-                descripcion: "Investigación, innovación y publicaciones científicas.",
-                icon: "flask-conical",
-                theme: "purple",
-                areas: ["Vicerrectoría de I+D+i"],
-                productos: [
-                    { nombre: "Proyectos de Innovación Tecnológica", costo: 3200000 },
-                    { nombre: "Fomento a la Investigación Institucional", costo: 2500000 },
-                    { nombre: "Capacitación Metodología Investigación", costo: 1000000 },
-                    { nombre: "Revista Científica Institucional", costo: 800000 }
-                ]
-            },
-            {
-                id: 4,
-                meta: "Fortalecer alianzas nacionales e internacionales",
-                descripcion: "Vinculación y colocación laboral.",
-                icon: "users",
-                theme: "green",
-                areas: ["Vicerrectoría de Vinculación","Planificación"],
-                productos: [
-                    { nombre: "Educación Continua y Capacitación", costo: 2800000 },
-                    { nombre: "Extensión Comunitaria y Resp. Social", costo: 2200000 },
-                    { nombre: "Pasantías y Colocación Laboral", costo: 1500000 },
-                    { nombre: "Acuerdos con Sector Productivo", costo: 600000 },
-                    { nombre: "Soporte en Acuerdos de Cooperación Internacional", costo: 0 },
-                ]
-            },
-            {
-                id: 3,
-                meta: "Calidad de la comunicación",
-                descripcion: "Imagen institucional y proyección externa.",
-                icon: "megaphone",
-                theme: "orange",
-                areas: ["Comunicaciones", "Protocolo"],
-                productos: [
-                    { nombre: "Campañas Publicidad y RRPP", costo: 1500000 },
-                    { nombre: "Contenidos audiovisuales", costo: 1200000 },
-                    { nombre: "Eventos institucionales", costo: 1186600 },
-                    { nombre: "Redes Sociales y Monitoreo", costo: 800000 },
-                    { nombre: "Ruedas de Prensa", costo: 500000 },
-                    { nombre: "Servicios de protocolo", costo: 350000 }
-                ]
-            },
-            {
-                id: 5,
-                meta: "Calidad de la gestión financiera y administrativa",
-                descripcion: "Eficiencia operativa y transparencia.",
-                icon: "file-text",
-                theme: "gray",
-                areas: ["Administrativa", "OAI"],
-                productos: [
-                    { nombre: "Gestión de inventario (Almacén)", costo: 0 },
-                    { nombre: "Clasificación Documental", costo: 0 },
-                    { nombre: "Procesos de Compras (Ley 47-25)", costo: 0 },
-                    { nombre: "Servicios de transportación", costo: 0 },
-                    { nombre: "Portal de Transparencia", costo: 0 }
-                ]
-            },
-            {
-                id: 6,
-                meta: "Calidad de la infraestructura física",
-                descripcion: "Seguridad y mantenimiento.",
-                icon: "shield-check",
-                theme: "red",
-                areas: ["Seguridad"],
-                productos: [
-                    { nombre: "Videovigilancia", costo: 0 },
-                    { nombre: "Remodelación Casa Guardia", costo: 0 },
-                    { nombre: "Personal nocturno", costo: 0 }
-                ]
-            },
 
-            // GRUPO 2: METAS ESTRATÉGICAS (SIN PRODUCTOS ESPECÍFICOS EN ESTE REPORTE)
-            {
-                id: 8, meta: "Calidad de la planificación en todas las áreas",
-                descripcion: "Alineación estratégica.", icon: "calendar-days", theme: "teal", areas: ["Planificación"],
-                productos: [
-                    { nombre: "Informes trimestrales de monitoreo PEI 2025-2028", costo: 0 },
-                    { nombre: "Documentación y estandarización del 60% de procesos", costo: 0 },
-                    { nombre: "Diagnóstico organizacional y Manual de Funciones (MOF)", costo: 0 },
-                    { nombre: "Formulación Anteproyecto Presupuesto Plurianual 2027", costo: 0 },
-                    { nombre: "Elaboración del Plan Anual de Compras (PACC) 2027", costo: 0 },
-                    { nombre: "Formulación del Plan Operativo Anual (POA) 2027", costo: 0 },
-                    { nombre: "Cumplimiento NOBACI e Índice de Control Interno", costo: 0 },
-                    { nombre: "Monitoreo del Índice de Gestión Presupuestaria (IGP)", costo: 0 },
-                    { nombre: "Calificación ante SISMAP (MAP)", costo: 0 },
-                    { nombre: "Análisis de escala salarial y nivelación", costo: 0 },
-                    { nombre: "Encuestas de satisfacción (Carta Compromiso)", costo: 0 },
-                    { nombre: "Consolidación de Memorias Institucionales (SAMI)", costo: 0 },                   
-
-                ]
-            },
-            { id: 9, meta: "Calidad de la gestión humana", descripcion: "Bienestar de colaboradores.", icon: "heart-handshake", theme: "pink", areas: ["RRHH"], productos: [] },
-            { id: 10, meta: "Calidad de la educación virtual", descripcion: "Plataformas online.", icon: "monitor-play", theme: "cyan", areas: ["Virtual"], productos: [] },
-            { id: 11, meta: "Incrementar el sentido de pertenencia", descripcion: "Identidad ITSC.", icon: "heart", theme: "rose", areas: ["Bienestar"], productos: [] },
-            { id: 12, meta: "Disminuir la deserción a un 15%", descripcion: "Retención estudiantil.", icon: "user-minus", theme: "amber", areas: ["Bienestar"], productos: [] },
-            { id: 13, meta: "Aumentar ingreso a 8,000", descripcion: "Nuevos estudiantes.", icon: "user-plus", theme: "emerald", areas: ["Admisiones"], productos: [] },
-            { id: 14, meta: "Aumento del presupuesto en 80%", descripcion: "Gestión financiera.", icon: "pie-chart", theme: "slate", areas: ["Financiera"], productos: [] }
-        ];
-
-        // --- LÓGICA DE RENDERIZADO ---
-
-        // Función para formatear moneda
         const formatCurrency = (val) => {
             return "RD$ " + val.toLocaleString('es-DO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         };
@@ -264,6 +127,10 @@
             return colors[theme] || colors.gray;
         };
 
+        const iniciar = async () => {
+            const data =  await MetasProductosTablero();
+          
+        
         // Cálculos Globales
         let totalMetas = data.length;
         let totalProductos = data.reduce((acc, item) => acc + item.productos.length, 0);
@@ -356,7 +223,9 @@
 
         // Inicializar iconos
         lucide.createIcons();
+};
 
+        window.onload = iniciar;
     </script>
 </body>
 

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Operativo 2026 - ITSC</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Animaciones personalizadas */
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .rotated {
+            transform: rotate(180deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto" id="app">
+        </div>
+
+        <script src="/datos.js" ></script>
+
+    <script>
+  /*      
+        const data = [
+          {
+            id: 1,
+            meta: "Calidad de los laboratorios y equipamiento tecnológico",
+            descripcion: "Modernización de infraestructura tecnológica y digitalización.",
+            iconName: "wifi",
+            iconColor: "text-blue-600",
+            color: "border-l-4 border-blue-500",
+            bgColor: "bg-blue-50",
+            areas: ["Dirección de Tecnologías de la Información y Comunicación"],
+            presupuestoTotal: 201000000,
+            productos: [
+              { nombre: "Conectividad y Seguridad de Red", costo: 136000000 },
+              { nombre: "Adecuación de equipos y licencias (Laboratorios/Adm.)", costo: 35000000 },
+              { nombre: "Transformación digital de procesos", costo: 25000000 },
+              { nombre: "Optimización de Data Center Core", costo: 5000000 },
+              { nombre: "Desarrollo e implementación de nuevos software", costo: 0 }
+            ]
+          },
+          {
+            id: 2,
+            meta: "Consolidar el Ecosistema I+D+I+E",
+            descripcion: "Fomento a la investigación, innovación y publicaciones científicas.",
+            iconName: "flask-conical",
+            iconColor: "text-purple-600",
+            color: "border-l-4 border-purple-500",
+            bgColor: "bg-purple-50",
+            areas: ["Vicerrectoría de I+D+i"],
+            presupuestoTotal: 7500000,
+            productos: [
+              { nombre: "Desarrollo de Proyectos de Innovación Tecnológica", costo: 3200000 },
+              { nombre: "Programa de Fomento a la Investigación Institucional", costo: 2500000 },
+              { nombre: "Capacitación en Metodología de la Investigación", costo: 1000000 },
+              { nombre: "Publicación de la Revista Científica Institucional", costo: 800000 }
+            ]
+          },
+          {
+            id: 3,
+            meta: "Calidad de la comunicación",
+            descripcion: "Fortalecimiento de la imagen institucional y proyección externa.",
+            iconName: "megaphone",
+            iconColor: "text-orange-600",
+            color: "border-l-4 border-orange-500",
+            bgColor: "bg-orange-50",
+            areas: ["Dirección de Comunicaciones", "Dirección de Protocolo y Eventos"],
+            presupuestoTotal: 5536600,
+            productos: [
+              { nombre: "Campañas de Publicidad y Relaciones Públicas", costo: 1500000 },
+              { nombre: "Producción de contenidos audiovisuales y gráficos", costo: 1200000 },
+              { nombre: "Gestión y coordinación de eventos institucionales", costo: 1186600 },
+              { nombre: "Gestión de Redes Sociales y Monitoreo", costo: 800000 },
+              { nombre: "Organización de Ruedas de Prensa", costo: 500000 },
+              { nombre: "Mejora de la calidad de servicios de protocolo", costo: 350000 }
+            ]
+          },
+          {
+            id: 4,
+            meta: "Fortalecer alianzas nacionales e internacionales",
+            descripcion: "Vinculación con el sector productivo y colocación laboral.",
+            iconName: "users",
+            iconColor: "text-green-600",
+            color: "border-l-4 border-green-500",
+            bgColor: "bg-green-50",
+            areas: ["Vicerrectoría de Vinculación"],
+            presupuestoTotal: 7100000,
+            productos: [
+              { nombre: "Programas de Educación Continua y Capacitación Externa", costo: 2800000 },
+              { nombre: "Proyectos de Extensión Comunitaria y Responsabilidad Social", costo: 2200000 },
+              { nombre: "Programa de Pasantías y Colocación Laboral", costo: 1500000 },
+              { nombre: "Acuerdos de Cooperación con el Sector Productivo", costo: 600000 }
+            ]
+          },
+          {
+            id: 5,
+            meta: "Calidad de la gestión financiera y administrativa",
+            descripcion: "Eficiencia en compras, inventarios y documentación.",
+            iconName: "file-text",
+            iconColor: "text-gray-600",
+            color: "border-l-4 border-gray-500",
+            bgColor: "bg-gray-50",
+            areas: ["Dirección Administrativa", "Oficina de Libre Acceso (OAI)"],
+            presupuestoTotal: 0,
+            productos: [
+              { nombre: "Fortalecimiento de gestión de inventario (Almacén)", costo: 0 },
+              { nombre: "Elaboración del Cuadro de Clasificación Documental", costo: 0 },
+              { nombre: "Ejecución de procesos según Ley 47-25 (Compras)", costo: 0 },
+              { nombre: "Gestión de expedientes de compras auditables", costo: 0 },
+              { nombre: "Optimización de servicios de transportación", costo: 0 },
+              { nombre: "Gestión del Portal de Transparencia", costo: 0 }
+            ]
+          },
+          {
+            id: 6,
+            meta: "Calidad de la infraestructura física",
+            descripcion: "Mantenimiento, seguridad perimetral y vigilancia.",
+            iconName: "shield-check",
+            iconColor: "text-red-600",
+            color: "border-l-4 border-red-500",
+            bgColor: "bg-red-50",
+            areas: ["Dirección de Seguridad"],
+            presupuestoTotal: 0,
+            productos: [
+              { nombre: "Mejoramiento de la Seguridad (Videovigilancia)", costo: 0 },
+              { nombre: "Remodelación de la Casa de Guardia", costo: 0 },
+              { nombre: "Aumento de personal nocturno", costo: 0 }
+            ]
+          },
+          {
+            id: 7,
+            meta: "Calidad Académica y mejora de la gestión",
+            descripcion: "Excelencia en los procesos de enseñanza y aprendizaje.",
+            iconName: "graduation-cap",
+            iconColor: "text-indigo-600",
+            color: "border-l-4 border-indigo-500",
+            bgColor: "bg-indigo-50",
+            areas: ["Vicerrectoría Académica"],
+            presupuestoTotal: 26613650, 
+            productos: [
+              { nombre: "Rediseño Curricular Digital: Digitalización del 50%", costo: 13530000 },
+              { nombre: "Campus Inclusivo: Formación docente y ajustes NEE", costo: 4500000 },
+              { nombre: "Certificaciones Internacionales (578 certificaciones)", costo: 4380450 },
+              { nombre: "Innovación Educativa ABP y Ferias", costo: 3000000 },
+              { nombre: "Optimización de Graduación y validación", costo: 800000 },
+              { nombre: "Acreditación IBEC y membresía institucional", costo: 403200 }
+            ]
+          },
+          {
+            id: 8,
+            meta: "Calidad de la planificación en todas las áreas",
+            descripcion: "Alineación estratégica y seguimiento de objetivos.",
+            iconName: "calendar-days",
+            iconColor: "text-teal-600",
+            color: "border-l-4 border-teal-500",
+            bgColor: "bg-teal-50",
+            areas: ["Dirección de Planificación"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 9,
+            meta: "Calidad de la gestión humana",
+            descripcion: "Desarrollo integral y bienestar de los colaboradores.",
+            iconName: "heart-handshake",
+            iconColor: "text-pink-600",
+            color: "border-l-4 border-pink-500",
+            bgColor: "bg-pink-50",
+            areas: ["Recursos Humanos"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 10,
+            meta: "Calidad de la educación virtual",
+            descripcion: "Fortalecimiento de plataformas y metodologías online.",
+            iconName: "monitor-play",
+            iconColor: "text-cyan-600",
+            color: "border-l-4 border-cyan-500",
+            bgColor: "bg-cyan-50",
+            areas: ["Educación Virtual"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 11,
+            meta: "Incrementar el sentido de pertenencia en ITSC",
+            descripcion: "Fomento de la identidad y cultura institucional.",
+            iconName: "heart",
+            iconColor: "text-rose-600",
+            color: "border-l-4 border-rose-500",
+            bgColor: "bg-rose-50",
+            areas: ["Bienestar Estudiantil / RRHH"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 12,
+            meta: "Disminuir la deserción de Estudiantes a un 15%",
+            descripcion: "Estrategias de retención y acompañamiento estudiantil.",
+            iconName: "user-minus",
+            iconColor: "text-amber-600",
+            color: "border-l-4 border-amber-500",
+            bgColor: "bg-amber-50",
+            areas: ["Bienestar Estudiantil"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 13,
+            meta: "Aumentar ingreso de Estudiantes a 8,000",
+            descripcion: "Captación y matriculación de nuevos alumnos.",
+            iconName: "user-plus",
+            iconColor: "text-emerald-600",
+            color: "border-l-4 border-emerald-500",
+            bgColor: "bg-emerald-50",
+            areas: ["Admisiones / Mercadeo"],
+            presupuestoTotal: 0,
+            productos: []
+          },
+          {
+            id: 14,
+            meta: "Aumento del presupuesto en 80%",
+            descripcion: "Gestión de recursos y eficiencia financiera.",
+            iconName: "pie-chart",
+            iconColor: "text-slate-600",
+            color: "border-l-4 border-slate-500",
+            bgColor: "bg-slate-50",
+            areas: ["Dirección Financiera"],
+            presupuestoTotal: 0,
+            productos: []
+          }
+        ];
+*/
+        
+
+        const formatCurrency = (value) => {
+            return new Intl.NumberFormat('es-DO', { 
+                style: 'currency', 
+                currency: 'DOP',
+                minimumFractionDigits: 0 
+            }).format(value).replace('DOP', 'RD$');
+        };
+
+        
+
+        async function renderApp() {
+            const app = document.getElementById('app');
+            const data = await MetasProductos();
+            const totalGeneral = data.reduce((acc, curr) => acc + curr.presupuestoTotal, 0);
+            const totalProductos = data.reduce((acc, curr) => acc + curr.productos.length, 0);
+            let htmlContent = `
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight">
+                        Plan Operativo 2026
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl mb-8 font-light">
+                        Visualización Integral de Metas Estratégicas y Productos
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3   gap-4 max-w-2xl mx-auto">
+                        <div class="flex items-center justify-center gap-3 bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-200">
+                            <div class="p-2 bg-green-100 rounded-lg">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-green-700"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-500 uppercase font-bold">Metas</p>
+                                <p class="text-2xl font-bold text-gray-900">${data.length}</p>
+                            </div>
+                        </div>
+                         <div class="flex items-center justify-center gap-3 bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-200">
+                            <div class="p-2 bg-green-100 rounded-lg">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-green-700"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-500 uppercase font-bold">Productos</p>
+                                <p class="text-2xl font-bold text-gray-900">${totalProductos}</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-center gap-3 bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-200">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <i data-lucide="dollar-sign" class="w-6 h-6 text-blue-700"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-gray-500 uppercase font-bold">Presupuesto</p>
+                                <p class="text-xl font-bold text-gray-900 font-mono">
+                                    ${formatCurrency(totalGeneral)}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-4">
+            `;
+
+            // Loop para crear las tarjetas
+            data.forEach(item => {
+                const hasPresupuesto = item.presupuestoTotal > 0;
+                const hasProductos = item.productos.length > 0;
+                
+                // Generar HTML de productos
+                let productosHtml = '';
+                if (hasProductos) {
+                    productosHtml = `<div class="bg-gray-50 rounded-lg overflow-hidden border border-gray-100">`;
+                    item.productos.forEach(prod => {
+                        productosHtml += `
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 border-b border-gray-100 last:border-0 hover:bg-white transition-colors gap-2">
+                                <div class="flex items-start gap-3">
+                                    <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-gray-400 shrink-0"></div>
+                                    <span class="text-sm text-gray-700">${prod.nombre}</span>
+                                </div>
+                                <div class="text-sm font-medium self-end sm:self-auto font-mono ${prod.costo > 0 ? 'text-gray-700' : 'text-orange-400'}">
+                                    ${prod.costo > 0 ? formatCurrency(prod.costo) : 'Por definir'}
+                                </div>
+                            </div>
+                        `;
+                    });
+                    productosHtml += `</div>`;
+                } else {
+                    productosHtml = `
+                        <div class="bg-gray-50 rounded-lg p-6 text-center border border-gray-100 border-dashed">
+                            <p class="text-sm text-gray-400 italic">No hay productos ni presupuesto asignados a esta meta en el archivo actual.</p>
+                        </div>
+                    `;
+                }
+
+                // Renderizar Tarjeta Principal
+                htmlContent += `
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ${item.color}">
+                        
+                        <div 
+                            onclick="toggleDetails(${item.id})"
+                            class="p-6 cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${item.bgColor}"
+                        >
+                            <div class="flex items-center gap-4 flex-1">
+                                <div class="p-3 bg-white rounded-full shadow-sm shrink-0">
+                                    <i data-lucide="${item.iconName}" class="w-8 h-8 ${item.iconColor}"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg md:text-xl font-bold text-gray-800 leading-tight">${item.meta}</h3>
+                                    <p class="text-xs md:text-sm text-gray-600 mt-1">${item.descripcion}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between md:block md:text-right w-full md:w-auto mt-2 md:mt-0 pl-16 md:pl-0">
+                                <p class="text-xs text-gray-500 uppercase font-semibold md:hidden">Presupuesto</p>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase font-semibold hidden md:block">Presupuesto Meta</p>
+                                    <p class="text-lg md:text-xl font-bold font-mono ${hasPresupuesto ? 'text-gray-800' : 'text-gray-400'}">
+                                        ${formatCurrency(item.presupuestoTotal)}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="details-${item.id}" class="hidden p-6 border-t border-gray-100 fade-in bg-white">
+                            
+                            <div class="mb-6">
+                                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                    <i data-lucide="building-2" class="w-3 h-3"></i> Áreas Sugeridas / Responsables
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    ${item.areas.map(area => `
+                                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium border border-gray-200">
+                                            ${area}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                    <i data-lucide="briefcase" class="w-3 h-3"></i> Productos y Proyectos
+                                </h4>
+                                ${productosHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            htmlContent += `</div>`; // Cerrar grid
+            
+            // Footer
+            htmlContent += `
+                <div class="mt-12 text-center pb-8">
+                    <p class="text-gray-400 text-sm mb-2">
+                        * Las metas con presupuesto RD$ 0.00 indican que no se encontraron productos asociados en el archivo de insumos.
+                    </p>
+                    <div class="inline-block px-4 py-1 rounded-full bg-gray-200 text-gray-500 text-xs font-medium">
+                        Instituto Técnico Superior Comunitario - ITSC © 2026
+                    </div>
+                </div>
+            `;
+
+            app.innerHTML = htmlContent;
+            
+            // Inicializar iconos de Lucide
+            lucide.createIcons();
+        }
+
+        
+        
+        function toggleDetails(id) {
+            const element = document.getElementById(`details-${id}`);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+
+        // Ejecutar render al cargar
+        document.addEventListener('DOMContentLoaded', renderApp);
+
+    </script>
+</body>
+</html>
