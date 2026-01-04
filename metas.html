@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,31 @@
     <!-- Iconos Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
     </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800 h-screen flex flex-col overflow-hidden">
 
     <!-- Header -->
-    <header class="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center flex-shrink-0 z-10 shadow-sm">
+    <header
+        class="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center flex-shrink-0 z-10 shadow-sm">
         <div class="flex items-center gap-3">
             <div class="bg-blue-600 p-2 rounded-lg">
                 <i data-lucide="layout-dashboard" class="text-white w-6 h-6"></i>
@@ -49,55 +65,552 @@
     <script>
         // --- DATOS (Mismos que el archivo React anterior) ---
         const rawData = [
-            // TIC
-            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Conectividad y Seguridad de Red", costo: 136000000 },
-            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Adecuación de equipos y licencias", costo: 35000000 },
-            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Transformación digital de procesos", costo: 25000000 },
-            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Optimización de Data Center Core", costo: 5000000 },
-            { meta: "Calidad de los laboratorios y equipamiento tecnológico", area: "Tecnología (TIC)", producto: "Desarrollo de nuevos software", costo: 0 },
-            
-            // I+D+i
-            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Proyectos de Innovación Tecnológica", costo: 3200000 },
-            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Fomento a la Investigación", costo: 2500000 },
-            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Capacitación Metodología Inv.", costo: 1000000 },
-            { meta: "Consolidar el Ecosistema I+D+I+E", area: "I+D+i", producto: "Revista Científica Institucional", costo: 800000 },
-
-            // Comunicaciones
-            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Campañas Publicidad y RRPP", costo: 1500000 },
-            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Contenidos audiovisuales", costo: 1200000 },
-            { meta: "Calidad de la comunicación", area: "Protocolo", producto: "Eventos institucionales", costo: 1186600 },
-            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Redes Sociales y Monitoreo", costo: 800000 },
-            { meta: "Calidad de la comunicación", area: "Comunicaciones", producto: "Ruedas de Prensa", costo: 500000 },
-            
-            // Vinculación
-            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Educación Continua", costo: 2800000 },
-            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Extensión Comunitaria", costo: 2200000 },
-            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Pasantías y Colocación", costo: 1500000 },
-            { meta: "Fortalecer alianzas nacionales e internacionales", area: "Vinculación", producto: "Acuerdos Sector Productivo", costo: 600000 },
-
-            // Académica
-            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Rediseño Curricular Digital", costo: 13530000 },
-            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Certificaciones Internacionales", costo: 4380450 },
-            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Campus Inclusivo (NEE)", costo: 4500000 },
-            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Innovación Educativa ABP", costo: 3000000 },
-            { meta: "Calidad Académica y mejora de la gestión", area: "Académica", producto: "Optimización de Graduación", costo: 800000 },
-
-            // Administrativa
-            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Gestión de inventario", costo: 0 },
-            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Clasificación Documental", costo: 0 },
-            { meta: "Calidad de la gestión financiera y administrativa", area: "Administrativa", producto: "Procesos Ley 47-25", costo: 0 },
-            { meta: "Calidad de la gestión financiera y administrativa", area: "OAI", producto: "Portal de Transparencia", costo: 0 },
-
-            // Seguridad
-            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Videovigilancia", costo: 0 },
-            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Remodelación Casa Guardia", costo: 0 },
-            { meta: "Calidad de la infraestructura física", area: "Seguridad", producto: "Personal nocturno", costo: 0 }
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Mejoramiento de la Seguridad (Videovigilancia y armamento)",
+                "area": "Seguridad",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Remodelación de la Casa de Guardia (Entrada principal)",
+                "area": "Seguridad",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Aumento de personal nocturno y alambrada perimetral",
+                "area": "Seguridad",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Inventario de la documentación existente en el ITSC",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Identificación de series documentales",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Elaboración del Cuadro de Clasificación Documental",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Elaboración de la Tabla de Retención Documental",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Ejecución de procesos según Ley 47-25 (Compras)",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Gestión de expedientes de compras auditables",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Política de Compras y Contrataciones Institucional",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Optimización de servicios de transportación",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Manual de Operaciones de Transportación",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Fortalecimiento de gestión de inventario (Almacén)",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Manual de Procesos de Almacén y Suministro",
+                "area": "Administrativa",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la comunicación",
+                "producto": "Mejora de la calidad de servicios de protocolo",
+                "area": "Protocolo",
+                "costo": 350000
+            },
+            {
+                "meta": "Calidad de la comunicación",
+                "producto": "Gestión y coordinación de eventos institucionales",
+                "area": "Protocolo",
+                "costo": 1186600
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Mejora de servicios de entrega de información (Ley 200-04)",
+                "area": "OAI",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Gestión del Portal de Transparencia (Res. 002-2021)",
+                "area": "OAI",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Fomento de la Transparencia y Ética Institucional",
+                "area": "OAI",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Informes trimestrales de monitoreo PEI 2025-2028",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Documentación y estandarización del 60% de procesos",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Diagnóstico organizacional y Manual de Funciones (MOF)",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Formulación Anteproyecto Presupuesto Plurianual 2027",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Elaboración del Plan Anual de Compras (PACC) 2027",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Formulación del Plan Operativo Anual (POA) 2027",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Cumplimiento NOBACI e Índice de Control Interno",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Monitoreo del Índice de Gestión Presupuestaria (IGP)",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Calificación ante SISMAP (MAP)",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Análisis de escala salarial y nivelación",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Encuestas de satisfacción (Carta Compromiso)",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Consolidación de Memorias Institucionales (SAMI)",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Fortalecer alianzas",
+                "producto": "Soporte en Acuerdos de Cooperación Internacional",
+                "area": "Planificación",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Mantenimiento planta de tratamiento",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 1800000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Mantenimiento equipos de cocina",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 6500000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Mantenimiento de generadores eléctricos",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 800000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Construcción de registros pluviales",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 1500000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Adquisición de materiales de limpieza y mantenimiento",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 3000000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Adquisición de equipos diversos (Camión, ascensores)",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 13500000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Mantenimiento transformadores y seccionadoras",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 8200000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Adquisición de Aires Acondicionados industriales",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 80000000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Construcción de garita de seguridad",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 1800000
+            },
+            {
+                "meta": "Calidad de la infraestructura física",
+                "producto": "Materiales y herramientas para personal técnico",
+                "area": "Infraestructura y Mantenimiento",
+                "costo": 3000000
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Servicios notariales y contratos de compras",
+                "area": "Jurídica",
+                "costo": 354000
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Servicios judiciales (Alguacil, certificaciones)",
+                "area": "Jurídica",
+                "costo": 120000
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Elaboración y revisión de contratos docentes",
+                "area": "Jurídica",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la planificación en todas las áreas",
+                "producto": "Representación en procesos legales",
+                "area": "Jurídica",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Reportes mensuales al Portal de Transparencia",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Monitoreo del Indicador de Gestión Presupuestaria",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Certificaciones DIGEPRES para nuevo ingreso",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Rotulación y registro de activos en SIAB",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Levantamientos de activos fijos (DIGECOG)",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Depósitos diarios de ingresos en Banreservas",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Cumplimiento de normativas contables",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión financiera",
+                "producto": "Envío de reportes de cierre a entes reguladores",
+                "area": "Financiera",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Plan de Capacitación 2026",
+                "area": "Gestión Humana",
+                "costo": 10000000
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Evaluación de Desempeño (SED)",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Programa de Salud Integral y Bienestar",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Plan de Mejora del Clima Organizacional",
+                "area": "Gestión Humana",
+                "costo": 4000000
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Sistema de Gestión Integral del Talento",
+                "area": "Gestión Humana",
+                "costo": 3607500
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Pago de nómina a colaboradores",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Fortalecimiento de Evaluación de Competencias",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Selección y Contratación de Personal",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Inducción al Personal de Nuevo Ingreso",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de la gestión humana",
+                "producto": "Acuerdos con Laboratorios (Exámenes)",
+                "area": "Gestión Humana",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Infraestructura de Conectividad y Seguridad de Red",
+                "area": "Tecnología (TIC)",
+                "costo": 136000000
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Optimización de Data Center Core",
+                "area": "Tecnología (TIC)",
+                "costo": 5000000
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Transformación digital de procesos",
+                "area": "Tecnología (TIC)",
+                "costo": 25000000
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Adecuación de equipos y licencias (Laboratorios)",
+                "area": "Tecnología (TIC)",
+                "costo": 35000000
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Desarrollo e implementación de nuevos software",
+                "area": "Tecnología (TIC)",
+                "costo": 0
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Producción de contenidos audiovisuales y gráficos",
+                "area": "Comunicaciones",
+                "costo": 1200000
+            },
+            {
+                "meta": "Calidad de la comunicación",
+                "producto": "Gestión de Redes Sociales y Monitoreo de Medios",
+                "area": "Comunicaciones",
+                "costo": 800000
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Campañas de Publicidad y Relaciones Públicas",
+                "area": "Comunicaciones",
+                "costo": 1500000
+            },
+            {
+                "meta": "Calidad de la comunicación",
+                "producto": "Organización de Ruedas de Prensa y Encuentros",
+                "area": "Comunicaciones",
+                "costo": 500000
+            },
+            {
+                "meta": "Consolidar el Ecosistema I+D+I+E",
+                "producto": "Programa de Fomento a la Investigación Institucional",
+                "area": "I+D+i",
+                "costo": 2500000
+            },
+            {
+                "meta": "Consolidar el Ecosistema I+D+I+E",
+                "producto": "Publicación de la Revista Científica Institucional",
+                "area": "I+D+i",
+                "costo": 800000
+            },
+            {
+                "meta": "Consolidar el Ecosistema I+D+I+E",
+                "producto": "Desarrollo de Proyectos de Innovación Tecnológica",
+                "area": "I+D+i",
+                "costo": 3200000
+            },
+            {
+                "meta": "Consolidar el Ecosistema I+D+I+E",
+                "producto": "Capacitación en Metodología de Investigación",
+                "area": "I+D+i",
+                "costo": 1000000
+            },
+            {
+                "meta": "Fortalecer alianzas",
+                "producto": "Programa de Pasantías y Colocación Laboral",
+                "area": "Vinculación",
+                "costo": 1500000
+            },
+            {
+                "meta": "Fortalecer alianzas",
+                "producto": "Acuerdos de Cooperación con el Sector Productivo",
+                "area": "Vinculación",
+                "costo": 600000
+            },
+            {
+                "meta": "Fortalecer alianzas",
+                "producto": "Programas de Educación Continua y Capacitación",
+                "area": "Vinculación",
+                "costo": 2800000
+            },
+            {
+                "meta": "Fortalecer alianzas",
+                "producto": "Proyectos de Extensión Comunitaria",
+                "area": "Vinculación",
+                "costo": 2200000
+            },
+            {
+                "meta": "Calidad de la educación virtual",
+                "producto": "Rediseño Curricular Digital y repositorio LMS",
+                "area": "Académica",
+                "costo": 13530000
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Certificaciones Internacionales (Adobe, Python, etc.)",
+                "area": "Académica",
+                "costo": 4380450
+            },
+            {
+                "meta": "Consolidar el Ecosistema I+D+I+E",
+                "producto": "Innovación Educativa ABP e Industria 5.0",
+                "area": "Académica",
+                "costo": 3000000
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Acreditación IBEC",
+                "area": "Académica",
+                "costo": 403200
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Campus Inclusivo: Ajustes razonables NEE",
+                "area": "Académica",
+                "costo": 4500000
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Optimización de Graduación: Automatización",
+                "area": "Académica",
+                "costo": 8000000
+            },
+            {
+                "meta": "Calidad de los laboratorios, equipamiento",
+                "producto": "Equipamiento Tecnológico (Diseño, Videojuegos)",
+                "area": "Académica",
+                "costo": 28940763
+            },
+            {
+                "meta": "Calidad Académica y mejora de la gestión",
+                "producto": "Insumos de Docencia: Materiales gastables",
+                "area": "Académica",
+                "costo": 22883564
+            },
+            {
+                "meta": "Disminuir la deserción a un 15%",
+                "producto": "Tasa de deserción (Intervención temprana)",
+                "area": "Académica",
+                "costo": 0
+            }
         ];
 
         // --- LÓGICA DE PROCESAMIENTO ---
 
         // 1. Agrupar por Meta
-        const metasGrouped = rawData.reduce((acc, item) => {
+        const metasGrouped = rawData.sort((a, b) =>  b.costo-a.costo).reduce((acc, item) => {
             if (!acc[item.meta]) {
                 acc[item.meta] = {
                     title: item.meta,
@@ -112,29 +625,34 @@
 
         // 2. Calcular Total General
         const grandTotal = rawData.reduce((sum, item) => sum + item.costo, 0);
-        document.getElementById('header-total-budget').innerText = `RD$ ${grandTotal.toLocaleString('es-DO', {minimumFractionDigits: 2})}`;
+        document.getElementById('header-total-budget').innerText = `RD$ ${grandTotal.toLocaleString('es-DO', { minimumFractionDigits: 2 })}`;
 
         // 3. Renderizar Tablero
         const boardContainer = document.getElementById('board-container');
-        
+
         // Colores para las etiquetas de las áreas
         const areaColors = {
-            "Tecnología (TIC)": "bg-blue-100 text-blue-700 border-blue-200",
-            "I+D+i": "bg-purple-100 text-purple-700 border-purple-200",
-            "Comunicaciones": "bg-orange-100 text-orange-700 border-orange-200",
-            "Protocolo": "bg-orange-50 text-orange-600 border-orange-200",
-            "Vinculación": "bg-green-100 text-green-700 border-green-200",
             "Académica": "bg-indigo-100 text-indigo-700 border-indigo-200",
-            "Administrativa": "bg-gray-100 text-gray-700 border-gray-200",
-            "OAI": "bg-gray-100 text-gray-600 border-gray-200",
-            "Seguridad": "bg-red-100 text-red-700 border-red-200"
+            "Administrativa": "bg-slate-100 text-slate-700 border-slate-200",
+            "Comunicaciones": "bg-orange-100 text-orange-700 border-orange-200",
+            "Financiera": "bg-emerald-100 text-emerald-700 border-emerald-200",
+            "Gestión Humana": "bg-rose-100 text-rose-700 border-rose-200",
+            "I+D+i": "bg-violet-100 text-violet-700 border-violet-200",
+            "Infraestructura y Mantenimiento": "bg-amber-100 text-amber-700 border-amber-200",
+            "Jurídica": "bg-zinc-100 text-zinc-700 border-zinc-300",
+            "OAI": "bg-cyan-100 text-cyan-700 border-cyan-200",
+            "Planificación": "bg-yellow-100 text-yellow-700 border-yellow-200",
+            "Protocolo": "bg-sky-100 text-sky-700 border-sky-200",
+            "Seguridad": "bg-red-100 text-red-700 border-red-200",
+            "Tecnología (TIC)": "bg-blue-100 text-blue-700 border-blue-200",
+            "Vinculación": "bg-teal-100 text-teal-700 border-teal-200"
         };
 
         Object.values(metasGrouped).forEach(metaGroup => {
             // Crear Columna
             const column = document.createElement('div');
             column.className = "flex flex-col w-80 min-w-[320px] bg-gray-50 rounded-xl border border-gray-200 shadow-sm max-h-full";
-            
+
             // Header de Columna
             const header = `
                 <div class="p-4 border-b border-gray-200 bg-white rounded-t-xl sticky top-0 z-10">
@@ -143,7 +661,7 @@
                         <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded-full">${metaGroup.products.length}</span>
                     </div>
                     <div class="text-xs text-gray-500 font-medium">
-                        Presupuesto: <span class="text-gray-900 font-bold">RD$ ${metaGroup.total.toLocaleString('es-DO', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</span>
+                        Presupuesto: <span class="text-gray-900 font-bold">RD$ ${metaGroup.total.toLocaleString('es-DO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
                         <div class="bg-blue-600 h-1.5 rounded-full" style="width: ${Math.min((metaGroup.total / 50000000) * 100, 100)}%"></div>
@@ -157,7 +675,7 @@
 
             metaGroup.products.forEach(prod => {
                 const colorClass = areaColors[prod.area] || "bg-gray-100 text-gray-600 border-gray-200";
-                
+
                 const card = `
                     <div class="bg-white p-3 rounded-lg border border-gray-200 shadow-sm card-hover transition-all duration-200 cursor-default group relative">
                         <div class="mb-2">
@@ -190,4 +708,5 @@
 
     </script>
 </body>
+
 </html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infograma Plan Operativo 2026 - ITSC</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .pattern-grid {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+
+        <!-- HEADER DEL INFOGRAMA -->
+        <header class="text-center mb-16 relative">
+            <div class="absolute inset-0 pattern-grid opacity-30 -z-10"></div>
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-widest mb-4">Planificación
+                Estratégica</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                Plan Operativo Anual <span class="text-blue-600">2026</span>
+            </h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto font-light">
+                Visualización integral de metas estratégicas, productos entregables y distribución presupuestaria.
+            </p>
+
+            <!-- RESUMEN DE KPI -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-blue-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-blue-500">
+                        <i data-lucide="target" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-4xl font-bold text-slate-800" id="total-metas">0</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Metas Definidas</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-green-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-green-500">
+                        <i data-lucide="layers" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-4xl font-bold text-slate-800" id="total-productos">0</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Productos Totales</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-indigo-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-indigo-500">
+                        <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-slate-800" id="total-presupuesto">RD$ 0</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Presupuesto Identificado</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECCIÓN 1: METAS CON PRESUPUESTO (MAIN) -->
+        <div class="mb-8 flex items-center gap-4">
+            <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                <i data-lucide="rocket" class="text-blue-600"></i> Metas Operativas Prioritarias
+            </h2>
+            <div class="h-px bg-gray-200 flex-1"></div>
+        </div>
+
+        <div id="container-main" class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <!-- JS Inject here -->
+        </div>
+
+        <!-- SECCIÓN 2: METAS ESTRATÉGICAS (SIN PRESUPUESTO DETALLADO) -->
+        <div class="mb-8 flex items-center gap-4">
+            <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                <i data-lucide="compass" class="text-teal-600"></i> Objetivos Estratégicos Institucionales
+            </h2>
+            <div class="h-px bg-gray-200 flex-1"></div>
+        </div>
+
+        <div id="container-strategic" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- JS Inject here -->
+        </div>
+
+        <footer class="text-center text-gray-400 text-sm py-8 border-t border-gray-200">
+            <p>© 2026 Planificación Institucional - Generado dinámicamente</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // --- DATOS COMPLETOS ---
+        const data = [
+            // GRUPO 1: CON PRESUPUESTO Y PRODUCTOS
+            {
+                id: 1,
+                meta: "Calidad de los laboratorios y equipamiento tecnológico",
+                descripcion: "Modernización de infraestructura tecnológica y digitalización.",
+                icon: "wifi",
+                theme: "blue",
+                areas: ["Tecnología (TIC)"],
+                productos: [
+                    { nombre: "Conectividad y Seguridad de Red", costo: 136000000 },
+                    { nombre: "Adecuación de equipos y licencias", costo: 35000000 },
+                    { nombre: "Transformación digital de procesos", costo: 25000000 },
+                    { nombre: "Optimización de Data Center Core", costo: 5000000 },
+                    { nombre: "Desarrollo de nuevos software", costo: 0 }
+                ]
+            },
+            {
+                id: 7, // Vicerrectoría Académica (Nueva)
+                meta: "Calidad Académica y mejora de la gestión",
+                descripcion: "Excelencia en los procesos de enseñanza y aprendizaje.",
+                icon: "graduation-cap",
+                theme: "indigo",
+                areas: ["Vicerrectoría Académica"],
+                productos: [
+                    { nombre: "Rediseño Curricular Digital (50%)", costo: 13530000 },
+                    { nombre: "Campus Inclusivo y formación NEE", costo: 4500000 },
+                    { nombre: "Certificaciones Internacionales (578)", costo: 4380450 },
+                    { nombre: "Innovación Educativa ABP y Ferias", costo: 3000000 },
+                    { nombre: "Optimización de Graduación", costo: 800000 },
+                    { nombre: "Acreditación IBEC", costo: 403200 }
+                ]
+            },
+            {
+                id: 2,
+                meta: "Consolidar el Ecosistema I+D+I+E",
+                descripcion: "Investigación, innovación y publicaciones científicas.",
+                icon: "flask-conical",
+                theme: "purple",
+                areas: ["Vicerrectoría de I+D+i"],
+                productos: [
+                    { nombre: "Proyectos de Innovación Tecnológica", costo: 3200000 },
+                    { nombre: "Fomento a la Investigación Institucional", costo: 2500000 },
+                    { nombre: "Capacitación Metodología Investigación", costo: 1000000 },
+                    { nombre: "Revista Científica Institucional", costo: 800000 }
+                ]
+            },
+            {
+                id: 4,
+                meta: "Fortalecer alianzas nacionales e internacionales",
+                descripcion: "Vinculación y colocación laboral.",
+                icon: "users",
+                theme: "green",
+                areas: ["Vicerrectoría de Vinculación","Planificación"],
+                productos: [
+                    { nombre: "Educación Continua y Capacitación", costo: 2800000 },
+                    { nombre: "Extensión Comunitaria y Resp. Social", costo: 2200000 },
+                    { nombre: "Pasantías y Colocación Laboral", costo: 1500000 },
+                    { nombre: "Acuerdos con Sector Productivo", costo: 600000 },
+                    { nombre: "Soporte en Acuerdos de Cooperación Internacional", costo: 0 },
+                ]
+            },
+            {
+                id: 3,
+                meta: "Calidad de la comunicación",
+                descripcion: "Imagen institucional y proyección externa.",
+                icon: "megaphone",
+                theme: "orange",
+                areas: ["Comunicaciones", "Protocolo"],
+                productos: [
+                    { nombre: "Campañas Publicidad y RRPP", costo: 1500000 },
+                    { nombre: "Contenidos audiovisuales", costo: 1200000 },
+                    { nombre: "Eventos institucionales", costo: 1186600 },
+                    { nombre: "Redes Sociales y Monitoreo", costo: 800000 },
+                    { nombre: "Ruedas de Prensa", costo: 500000 },
+                    { nombre: "Servicios de protocolo", costo: 350000 }
+                ]
+            },
+            {
+                id: 5,
+                meta: "Calidad de la gestión financiera y administrativa",
+                descripcion: "Eficiencia operativa y transparencia.",
+                icon: "file-text",
+                theme: "gray",
+                areas: ["Administrativa", "OAI"],
+                productos: [
+                    { nombre: "Gestión de inventario (Almacén)", costo: 0 },
+                    { nombre: "Clasificación Documental", costo: 0 },
+                    { nombre: "Procesos de Compras (Ley 47-25)", costo: 0 },
+                    { nombre: "Servicios de transportación", costo: 0 },
+                    { nombre: "Portal de Transparencia", costo: 0 }
+                ]
+            },
+            {
+                id: 6,
+                meta: "Calidad de la infraestructura física",
+                descripcion: "Seguridad y mantenimiento.",
+                icon: "shield-check",
+                theme: "red",
+                areas: ["Seguridad"],
+                productos: [
+                    { nombre: "Videovigilancia", costo: 0 },
+                    { nombre: "Remodelación Casa Guardia", costo: 0 },
+                    { nombre: "Personal nocturno", costo: 0 }
+                ]
+            },
+
+            // GRUPO 2: METAS ESTRATÉGICAS (SIN PRODUCTOS ESPECÍFICOS EN ESTE REPORTE)
+            {
+                id: 8, meta: "Calidad de la planificación en todas las áreas",
+                descripcion: "Alineación estratégica.", icon: "calendar-days", theme: "teal", areas: ["Planificación"],
+                productos: [
+                    { nombre: "Informes trimestrales de monitoreo PEI 2025-2028", costo: 0 },
+                    { nombre: "Documentación y estandarización del 60% de procesos", costo: 0 },
+                    { nombre: "Diagnóstico organizacional y Manual de Funciones (MOF)", costo: 0 },
+                    { nombre: "Formulación Anteproyecto Presupuesto Plurianual 2027", costo: 0 },
+                    { nombre: "Elaboración del Plan Anual de Compras (PACC) 2027", costo: 0 },
+                    { nombre: "Formulación del Plan Operativo Anual (POA) 2027", costo: 0 },
+                    { nombre: "Cumplimiento NOBACI e Índice de Control Interno", costo: 0 },
+                    { nombre: "Monitoreo del Índice de Gestión Presupuestaria (IGP)", costo: 0 },
+                    { nombre: "Calificación ante SISMAP (MAP)", costo: 0 },
+                    { nombre: "Análisis de escala salarial y nivelación", costo: 0 },
+                    { nombre: "Encuestas de satisfacción (Carta Compromiso)", costo: 0 },
+                    { nombre: "Consolidación de Memorias Institucionales (SAMI)", costo: 0 },                   
+
+                ]
+            },
+            { id: 9, meta: "Calidad de la gestión humana", descripcion: "Bienestar de colaboradores.", icon: "heart-handshake", theme: "pink", areas: ["RRHH"], productos: [] },
+            { id: 10, meta: "Calidad de la educación virtual", descripcion: "Plataformas online.", icon: "monitor-play", theme: "cyan", areas: ["Virtual"], productos: [] },
+            { id: 11, meta: "Incrementar el sentido de pertenencia", descripcion: "Identidad ITSC.", icon: "heart", theme: "rose", areas: ["Bienestar"], productos: [] },
+            { id: 12, meta: "Disminuir la deserción a un 15%", descripcion: "Retención estudiantil.", icon: "user-minus", theme: "amber", areas: ["Bienestar"], productos: [] },
+            { id: 13, meta: "Aumentar ingreso a 8,000", descripcion: "Nuevos estudiantes.", icon: "user-plus", theme: "emerald", areas: ["Admisiones"], productos: [] },
+            { id: 14, meta: "Aumento del presupuesto en 80%", descripcion: "Gestión financiera.", icon: "pie-chart", theme: "slate", areas: ["Financiera"], productos: [] }
+        ];
+
+        // --- LÓGICA DE RENDERIZADO ---
+
+        // Función para formatear moneda
+        const formatCurrency = (val) => {
+            return "RD$ " + val.toLocaleString('es-DO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        };
+
+        // Función para obtener colores de Tailwind dinámicamente
+        const getColors = (theme) => {
+            const colors = {
+                blue: { bg: 'bg-blue-50', border: 'border-blue-500', text: 'text-blue-700', icon: 'text-blue-600', badge: 'bg-blue-100' },
+                indigo: { bg: 'bg-indigo-50', border: 'border-indigo-500', text: 'text-indigo-700', icon: 'text-indigo-600', badge: 'bg-indigo-100' },
+                purple: { bg: 'bg-purple-50', border: 'border-purple-500', text: 'text-purple-700', icon: 'text-purple-600', badge: 'bg-purple-100' },
+                green: { bg: 'bg-green-50', border: 'border-green-500', text: 'text-green-700', icon: 'text-green-600', badge: 'bg-green-100' },
+                orange: { bg: 'bg-orange-50', border: 'border-orange-500', text: 'text-orange-700', icon: 'text-orange-600', badge: 'bg-orange-100' },
+                red: { bg: 'bg-red-50', border: 'border-red-500', text: 'text-red-700', icon: 'text-red-600', badge: 'bg-red-100' },
+                gray: { bg: 'bg-gray-50', border: 'border-gray-500', text: 'text-gray-700', icon: 'text-gray-600', badge: 'bg-gray-200' },
+                teal: { bg: 'bg-teal-50', border: 'border-teal-400', text: 'text-teal-700', icon: 'text-teal-600', badge: 'bg-teal-100' },
+                pink: { bg: 'bg-pink-50', border: 'border-pink-400', text: 'text-pink-700', icon: 'text-pink-600', badge: 'bg-pink-100' },
+                cyan: { bg: 'bg-cyan-50', border: 'border-cyan-400', text: 'text-cyan-700', icon: 'text-cyan-600', badge: 'bg-cyan-100' },
+                rose: { bg: 'bg-rose-50', border: 'border-rose-400', text: 'text-rose-700', icon: 'text-rose-600', badge: 'bg-rose-100' },
+                amber: { bg: 'bg-amber-50', border: 'border-amber-400', text: 'text-amber-700', icon: 'text-amber-600', badge: 'bg-amber-100' },
+                emerald: { bg: 'bg-emerald-50', border: 'border-emerald-400', text: 'text-emerald-700', icon: 'text-emerald-600', badge: 'bg-emerald-100' },
+                slate: { bg: 'bg-slate-50', border: 'border-slate-400', text: 'text-slate-700', icon: 'text-slate-600', badge: 'bg-slate-200' }
+            };
+            return colors[theme] || colors.gray;
+        };
+
+        // Cálculos Globales
+        let totalMetas = data.length;
+        let totalProductos = data.reduce((acc, item) => acc + item.productos.length, 0);
+        let totalPresupuesto = data.reduce((acc, item) => acc + item.productos.reduce((sum, p) => sum + p.costo, 0), 0);
+
+        // Renderizar KPI
+        document.getElementById('total-metas').innerText = totalMetas;
+        document.getElementById('total-productos').innerText = totalProductos;
+        document.getElementById('total-presupuesto').innerText = formatCurrency(totalPresupuesto).split('.')[0]; // Sin decimales en el header
+
+        // Renderizar Tarjetas
+        const mainContainer = document.getElementById('container-main');
+        const stratContainer = document.getElementById('container-strategic');
+
+        data.forEach(item => {
+            const hasProducts = item.productos.length > 0;
+            const theme = getColors(item.theme);
+            const totalMeta = item.productos.reduce((sum, p) => sum + p.costo, 0);
+
+            let productsHTML = '';
+            if (hasProducts) {
+                item.productos.forEach(prod => {
+                    productsHTML += `
+                        <div class="flex justify-between items-start py-2 border-b border-gray-100 last:border-0 text-sm">
+                            <span class="text-gray-600 w-2/3 pr-2">• ${prod.nombre}</span>
+                            <span class="font-bold ${prod.costo > 0 ? 'text-gray-700' : 'text-orange-400'} text-right w-1/3">
+                                ${prod.costo > 0 ? 'RD$ ' + prod.costo.toLocaleString('es-DO') : 'Por definir'}
+                            </span>
+                        </div>
+                    `;
+                });
+            } else {
+                productsHTML = `<div class="text-center py-4 text-xs text-gray-400 italic">Planificación en proceso para esta meta estratégica.</div>`;
+            }
+
+            const cardHTML = `
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                    <!-- Card Header -->
+                    <div class="p-6 ${theme.bg} border-l-4 ${theme.border}">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-3 bg-white rounded-xl shadow-sm">
+                                <i data-lucide="${item.icon}" class="${theme.icon} w-6 h-6"></i>
+                            </div>
+                            ${hasProducts ? `
+                            <div class="text-right">
+                                <p class="text-xs text-gray-500 uppercase font-bold tracking-wider">Presupuesto</p>
+                                <p class="text-lg font-bold text-gray-800">${formatCurrency(totalMeta).split('.')[0]}</p>
+                            </div>
+                            ` : ''}
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 leading-tight mb-2">${item.meta}</h3>
+                        <p class="text-sm text-gray-600">${item.descripcion}</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            ${item.areas.map(area => `<span class="inline-block px-2 py-1 rounded-md bg-white/60 border border-white text-xs font-semibold ${theme.text}">${area}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Card Body (Productos) -->
+                    ${hasProducts ? `
+                    <div class="p-6 bg-white flex-1 flex flex-col">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-100 pb-2">
+                            Productos Entregables (${item.productos.length})
+                        </h4>
+                        <div class="space-y-1">
+                            ${productsHTML}
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+
+            if (hasProducts) {
+                mainContainer.innerHTML += cardHTML;
+            } else {
+                // Versión simplificada para metas estratégicas sin productos
+                const strategicCard = `
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all p-5 flex items-center gap-4">
+                        <div class="p-3 ${theme.badge} rounded-full shrink-0">
+                            <i data-lucide="${item.icon}" class="${theme.icon} w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm leading-snug mb-1">${item.meta}</h4>
+                            <p class="text-xs text-gray-500">${item.areas[0]}</p>
+                        </div>
+                    </div>
+                `;
+                stratContainer.innerHTML += strategicCard;
+            }
+        });
+
+        // Inicializar iconos
+        lucide.createIcons();
+
+    </script>
+</body>
+
+</html>
