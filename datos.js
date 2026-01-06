@@ -142,6 +142,14 @@ const metas = [
         color: "border-l-4 border-slate-500",
         bgColor: "bg-slate-50",
 
+    },{
+        id: 15,
+        meta: "Calida en los servicios que se ofrecen",
+        descripcion: "Mejora continua en atención y soporte.",
+        iconName: "cog",
+        iconColor: "text-yellow-600",
+        color: "border-l-4 border-yellow-500",
+        bgColor: "bg-yellow-50",
     }
 ];
 

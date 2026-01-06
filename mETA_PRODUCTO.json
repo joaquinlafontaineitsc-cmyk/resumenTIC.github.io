@@ -1,15 +1,57 @@
 [
   {
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
+    "producto": "Actualización de equipos críticos (Diseño, Salud, Tech, producción eventos).",
+    "area": "Académica",
+    "costo": 28940763.0
+  },
+  {
     "meta": "Calidad de la educación virtual",
-    "producto": "Rediseño Curricular Digital y repositorio LMS",
+    "producto": "Actualización de planes de estudio y compendios alineados a MNC Nivel 5.",
     "area": "Académica",
     "costo": 13530000.0
   },
   {
     "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Certificaciones Internacionales (Adobe, Python, etc.)",
+    "producto": "Agilización de validación de expedientes y ceremonias.\n",
     "area": "Académica",
-    "costo": 4380450.0
+    "costo": 8000000.0
+  },
+  {
+    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
+    "producto": "Aseguramiento de materiales gastables para talleres prácticos.",
+    "area": "Académica",
+    "costo": 22883564.0
+  },
+  {
+    "meta": "Calidad Académica y mejora de la gestión",
+    "producto": "Campus Inclusivo: Ajustes razonables NEE",
+    "area": "Académica",
+    "costo": 4500000.0
+  },
+  {
+    "meta": "Calidad de la gestión humana",
+    "producto": "Ciclo de acompañamiento y evaluación del desempeño docente.",
+    "area": "Académica",
+    "costo": 0.0
+  },
+  {
+    "meta": "Disminuir la deserción a un 15%",
+    "producto": "Detección e intervención de estudiantes en riesgo (asistencia/notas).",
+    "area": "Académica",
+    "costo": 0.0
+  },
+  {
+    "meta": "Aumentar ingreso de Estudiantes a 8,000",
+    "producto": "Estrategias de captación y simplificación de procesos de ingreso.",
+    "area": "Académica",
+    "costo": 2000000.0
+  },
+  {
+    "meta": "Calidad Académica y mejora de la gestión",
+    "producto": "Inicio del proceso de autoevaluación de carreras priorizadas.",
+    "area": "Académica",
+    "costo": 10395000.0
   },
   {
     "meta": "Consolidar el Ecosistema I+D+I+E",
@@ -18,16 +60,40 @@
     "costo": 3000000.0
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Acreditación IBEC",
+    "meta": "Calidad de la infraestructura física",
+    "producto": "Mantenimiento preventivo y correctivo de talleres.",
     "area": "Académica",
-    "costo": 403200.0
+    "costo": 0.0
+  },
+  {
+    "meta": "Calida en los servicios que se ofrecen",
+    "producto": "Mejora de atención, encuestas de servicio y bienestar.",
+    "area": "Académica",
+    "costo": 0.0
+  },
+  {
+    "meta": "Calidad de la gestión humana",
+    "producto": "Nuevo esquema de pago y carga académica (15 semanas + 30%).",
+    "area": "Académica",
+    "costo": 237317509.0
   },
   {
     "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Campus Inclusivo: Ajustes razonables NEE",
+    "producto": "Programa de certificaciones internacionales (IBEC, Adobe, Python, ServSafe).",
     "area": "Académica",
-    "costo": 4500000.0
+    "costo": 4500450.0
+  },
+  {
+    "meta": "Aumentar ingreso de Estudiantes a 8,000",
+    "producto": "Promoción Académica: Ferias, congresos y eventos. Patrocinios",
+    "area": "Académica",
+    "costo": 4000000.0
+  },
+  {
+    "meta": "Calidad Académica y mejora de la gestión",
+    "producto": "Verificación de procesos académicos y administrativos.",
+    "area": "Académica",
+    "costo": 0.0
   },
   {
     "meta": "Calidad de la gestión administrativa y financiera",
@@ -193,18 +259,6 @@
   },
   {
     "meta": "Calidad de la gestión humana",
-    "producto": "Evaluación de Desempeño (SED)",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Programa de Salud Integral y Bienestar",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
     "producto": "Plan de Mejora del Clima Organizacional",
     "area": "Gestión Humana",
     "costo": 4000000.0
@@ -217,9 +271,21 @@
   },
   {
     "meta": "Calidad de la gestión humana",
+    "producto": "Evaluación de Desempeño (SED)",
+    "area": "Gestión Humana",
+    "costo": 0.0
+  },
+  {
+    "meta": "Calidad de la gestión humana",
+    "producto": "Programa de Salud Integral y Bienestar",
+    "area": "Gestión Humana",
+    "costo": 0.0
+  },
+  {
+    "meta": "Calidad de la gestión humana",
     "producto": "Pago de nómina a colaboradores",
     "area": "Gestión Humana",
-    "costo": 0
+    "costo": 0.0
   },
   {
     "meta": "Calidad de la gestión humana",
@@ -253,6 +319,30 @@
   },
   {
     "meta": "Consolidar el Ecosistema I+D+I+E",
+    "producto": "Realizada Feria de Innovación",
+    "area": "I+D+i",
+    "costo": 1000000.0
+  },
+  {
+    "meta": "Consolidar el Ecosistema I+D+I+E",
+    "producto": "Plataforma Integral de Accesibilidad Educativa para Estudiantes con Discapacidad Auditiva del ITSC ",
+    "area": "I+D+i",
+    "costo": 800000.0
+  },
+  {
+    "meta": "Consolidar el Ecosistema I+D+I+E",
+    "producto": "Desplegado Agente Inteligente de Asistencia Estudiantil",
+    "area": "I+D+i",
+    "costo": 600000.0
+  },
+  {
+    "meta": "Consolidar el Ecosistema I+D+I+E",
+    "producto": "Realizada Feria de Emprendimiento del ITSC",
+    "area": "I+D+i",
+    "costo": 400000.0
+  },
+  {
+    "meta": "Consolidar el Ecosistema I+D+I+E",
     "producto": "Realizado Estudio del perfil Sociodemográfico del Distrito Municipal de San Luís y Santo Domingo Este",
     "area": "I+D+i",
     "costo": 250000.0
@@ -271,39 +361,9 @@
   },
   {
     "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizada Feria de Innovación",
-    "area": "I+D+i",
-    "costo": 1000000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
     "producto": "Realizada Competencia Interna de Emprendimiento del ITSC",
     "area": "I+D+i",
     "costo": 200000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizada Feria de Emprendimiento del ITSC",
-    "area": "I+D+i",
-    "costo": 400000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Diseñada y Publicada Revista de Innovación y Divulgación IDEA",
-    "area": "I+D+i",
-    "costo": 100000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Desplegado Agente Inteligente de Asistencia Estudiantil",
-    "area": "I+D+i",
-    "costo": 600000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Plataforma Integral de Accesibilidad Educativa para Estudiantes con Discapacidad Auditiva del ITSC ",
-    "area": "I+D+i",
-    "costo": 800000.0
   },
   {
     "meta": "Consolidar el Ecosistema I+D+I+E",
@@ -313,39 +373,21 @@
   },
   {
     "meta": "Consolidar el Ecosistema I+D+I+E",
+    "producto": "Diseñada y Publicada Revista de Innovación y Divulgación IDEA",
+    "area": "I+D+i",
+    "costo": 100000.0
+  },
+  {
+    "meta": "Consolidar el Ecosistema I+D+I+E",
     "producto": "Capacitación a coordinadores_x000B_de áreas académicas sobre microcredenciales",
     "area": "I+D+i",
     "costo": 100000.0
   },
   {
     "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento planta de tratamiento",
+    "producto": "Adquisición de Aires Acondicionados industriales",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 1800000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento equipos de cocina",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 6500000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento de generadores eléctricos",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 800000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Construcción de registros pluviales",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 1500000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Adquisición de materiales de limpieza y mantenimiento",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 3000000.0
+    "costo": 80000000.0
   },
   {
     "meta": "Calidad de la infraestructura física",
@@ -361,9 +403,27 @@
   },
   {
     "meta": "Calidad de la infraestructura física",
-    "producto": "Adquisición de Aires Acondicionados industriales",
+    "producto": "Mantenimiento equipos de cocina",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 80000000.0
+    "costo": 6500000.0
+  },
+  {
+    "meta": "Calidad de la infraestructura física",
+    "producto": "Adquisición de materiales de limpieza y mantenimiento",
+    "area": "Infraestructura y Mantenimiento",
+    "costo": 3000000.0
+  },
+  {
+    "meta": "Calidad de la infraestructura física",
+    "producto": "Materiales y herramientas para personal técnico",
+    "area": "Infraestructura y Mantenimiento",
+    "costo": 3000000.0
+  },
+  {
+    "meta": "Calidad de la infraestructura física",
+    "producto": "Mantenimiento planta de tratamiento",
+    "area": "Infraestructura y Mantenimiento",
+    "costo": 1800000.0
   },
   {
     "meta": "Calidad de la infraestructura física",
@@ -373,9 +433,15 @@
   },
   {
     "meta": "Calidad de la infraestructura física",
-    "producto": "Materiales y herramientas para personal técnico",
+    "producto": "Construcción de registros pluviales",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 3000000.0
+    "costo": 1500000.0
+  },
+  {
+    "meta": "Calidad de la infraestructura física",
+    "producto": "Mantenimiento de generadores eléctricos",
+    "area": "Infraestructura y Mantenimiento",
+    "costo": 800000.0
   },
   {
     "meta": "Calidad de la gestión administrativa y financiera",
@@ -498,16 +564,16 @@
     "costo": 0.0
   },
   {
-    "meta": "Calidad de la comunicación",
-    "producto": "Mejora de la calidad de servicios de protocolo",
-    "area": "Protocolo",
-    "costo": 350000.0
-  },
-  {
-    "meta": "Calidad de la comunicación",
+    "meta": "Calida en los servicios que se ofrecen",
     "producto": "Gestión y coordinación de eventos institucionales",
     "area": "Protocolo",
     "costo": 1186600.0
+  },
+  {
+    "meta": "Calida en los servicios que se ofrecen",
+    "producto": "Mejora de la calidad de servicios de protocolo",
+    "area": "Protocolo",
+    "costo": 350000.0
   },
   {
     "meta": "Calidad de la infraestructura física",
@@ -535,9 +601,9 @@
   },
   {
     "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Optimización de Data Center Core",
+    "producto": "Adecuación de equipos y licencias (Laboratorios)",
     "area": "Tecnología (TIC)",
-    "costo": 5000000.0
+    "costo": 35000000.0
   },
   {
     "meta": "Calidad de los laboratorios y equipamiento tecnológico",
@@ -547,26 +613,14 @@
   },
   {
     "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Adecuación de equipos y licencias (Laboratorios)",
+    "producto": "Optimización de Data Center Core",
     "area": "Tecnología (TIC)",
-    "costo": 35000000.0
+    "costo": 5000000.0
   },
   {
     "meta": "Calidad de los laboratorios y equipamiento tecnológico",
     "producto": "Desarrollo e implementación de nuevos software",
     "area": "Tecnología (TIC)",
-    "costo": 0.0
-  },
-  {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Realización de acuerdos de colaboración",
-    "area": "Vinculación",
-    "costo": 500000.0
-  },
-  {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Realización de promoción y posicionamiento del ITSC",
-    "area": "Vinculación",
     "costo": 0.0
   },
   {
@@ -583,33 +637,21 @@
   },
   {
     "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Fortalecimiento de la vinculación institucional",
+    "producto": "Programa marca ITSC y promoción institucional",
     "area": "Vinculación",
-    "costo": 300000.0
+    "costo": 5000000.0
   },
   {
     "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de pasantías escolares",
+    "producto": "Programa de intercambios internacionales",
     "area": "Vinculación",
-    "costo": 150000.0
-  },
-  {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de pasantías universitarias",
-    "area": "Vinculación",
-    "costo": 0.0
+    "costo": 2500000.0
   },
   {
     "meta": "Fortalecer alianzas nacionales e internacionales",
     "producto": "Programa impulsa ITSC ",
     "area": "Vinculación",
     "costo": 1000000.0
-  },
-  {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa marca ITSC y promoción institucional",
-    "area": "Vinculación",
-    "costo": 5000000.0
   },
   {
     "meta": "Fortalecer alianzas nacionales e internacionales",
@@ -631,8 +673,32 @@
   },
   {
     "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de intercambios internacionales",
+    "producto": "Realización de acuerdos de colaboración",
     "area": "Vinculación",
-    "costo": 2500000.0
+    "costo": 500000.0
+  },
+  {
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "producto": "Fortalecimiento de la vinculación institucional",
+    "area": "Vinculación",
+    "costo": 300000.0
+  },
+  {
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "producto": "Programa de pasantías escolares",
+    "area": "Vinculación",
+    "costo": 150000.0
+  },
+  {
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "producto": "Realización de promoción y posicionamiento del ITSC",
+    "area": "Vinculación",
+    "costo": 0.0
+  },
+  {
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "producto": "Programa de pasantías universitarias",
+    "area": "Vinculación",
+    "costo": 0.0
   }
 ]
