@@ -20,6 +20,16 @@
             background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
             background-size: 20px 20px;
         }
+
+        /* Reglas de paginación para impresión */
+        @media print {
+
+            #container-main>div,
+            #container-strategic>div {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
     </style>
 </head>
 
@@ -64,7 +74,31 @@
                         <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
                     </div>
                     <p class="text-3xl font-bold text-slate-800" id="total-presupuesto">RD$ 0</p>
-                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Presupuesto Identificado</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Presupuesto Productos</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-indigo-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-indigo-500">
+                        <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-slate-800" id="total-presupuesto">1,270,550,100</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Presupuesto 2026</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-red-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-indigo-500">
+                        <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-slate-800" id="total-presupuesto">104,773,593</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Servicios básicos</p>
+                </div>
+                                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-red-500 transform hover:-translate-y-1 transition-transform">
+                    <div class="flex items-center justify-center mb-2 text-indigo-500">
+                        <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-slate-800" id="total-presupuesto">343,594,046</p>
+                    <p class="text-sm text-gray-400 uppercase font-semibold tracking-wide">Procesos Plurianuales</p>
                 </div>
             </div>
         </header>
@@ -128,32 +162,32 @@
         };
 
         const iniciar = async () => {
-            const data =  await MetasProductosTablero();
-          
-        
-        // Cálculos Globales
-        let totalMetas = data.length;
-        let totalProductos = data.reduce((acc, item) => acc + item.productos.length, 0);
-        let totalPresupuesto = data.reduce((acc, item) => acc + item.productos.reduce((sum, p) => sum + p.costo, 0), 0);
+            const data = await MetasProductosTablero();
 
-        // Renderizar KPI
-        document.getElementById('total-metas').innerText = totalMetas;
-        document.getElementById('total-productos').innerText = totalProductos;
-        document.getElementById('total-presupuesto').innerText = formatCurrency(totalPresupuesto).split('.')[0]; // Sin decimales en el header
 
-        // Renderizar Tarjetas
-        const mainContainer = document.getElementById('container-main');
-        const stratContainer = document.getElementById('container-strategic');
+            // Cálculos Globales
+            let totalMetas = data.length;
+            let totalProductos = data.reduce((acc, item) => acc + item.productos.length, 0);
+            let totalPresupuesto = data.reduce((acc, item) => acc + item.productos.reduce((sum, p) => sum + p.costo, 0), 0);
 
-        data.forEach(item => {
-            const hasProducts = item.productos.length > 0;
-            const theme = getColors(item.theme);
-            const totalMeta = item.productos.reduce((sum, p) => sum + p.costo, 0);
+            // Renderizar KPI
+            document.getElementById('total-metas').innerText = totalMetas;
+            document.getElementById('total-productos').innerText = totalProductos;
+            document.getElementById('total-presupuesto').innerText = formatCurrency(totalPresupuesto).split('.')[0]; // Sin decimales en el header
 
-            let productsHTML = '';
-            if (hasProducts) {
-                item.productos.forEach(prod => {
-                    productsHTML += `
+            // Renderizar Tarjetas
+            const mainContainer = document.getElementById('container-main');
+            const stratContainer = document.getElementById('container-strategic');
+
+            data.forEach(item => {
+                const hasProducts = item.productos.length > 0;
+                const theme = getColors(item.theme);
+                const totalMeta = item.productos.reduce((sum, p) => sum + p.costo, 0);
+
+                let productsHTML = '';
+                if (hasProducts) {
+                    item.productos.forEach(prod => {
+                        productsHTML += `
                         <div class="flex justify-between items-start py-2 border-b border-gray-100 last:border-0 text-sm">
                             <span class="text-gray-600 w-2/3 pr-2">• ${prod.nombre}</span>
                             <span class="font-bold ${prod.costo > 0 ? 'text-gray-700' : 'text-orange-400'} text-right w-1/3">
@@ -161,12 +195,12 @@
                             </span>
                         </div>
                     `;
-                });
-            } else {
-                productsHTML = `<div class="text-center py-4 text-xs text-gray-400 italic">Planificación en proceso para esta meta estratégica.</div>`;
-            }
+                    });
+                } else {
+                    productsHTML = `<div class="text-center py-4 text-xs text-gray-400 italic">Planificación en proceso para esta meta estratégica.</div>`;
+                }
 
-            const cardHTML = `
+                const cardHTML = `
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <!-- Card Header -->
                     <div class="p-6 ${theme.bg} border-l-4 ${theme.border}">
@@ -202,11 +236,11 @@
                 </div>
             `;
 
-            if (hasProducts) {
-                mainContainer.innerHTML += cardHTML;
-            } else {
-                // Versión simplificada para metas estratégicas sin productos
-                const strategicCard = `
+                if (hasProducts) {
+                    mainContainer.innerHTML += cardHTML;
+                } else {
+                    // Versión simplificada para metas estratégicas sin productos
+                    const strategicCard = `
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all p-5 flex items-center gap-4">
                         <div class="p-3 ${theme.badge} rounded-full shrink-0">
                             <i data-lucide="${item.icon}" class="${theme.icon} w-5 h-5"></i>
@@ -217,13 +251,13 @@
                         </div>
                     </div>
                 `;
-                stratContainer.innerHTML += strategicCard;
-            }
-        });
+                    stratContainer.innerHTML += strategicCard;
+                }
+            });
 
-        // Inicializar iconos
-        lucide.createIcons();
-};
+            // Inicializar iconos
+            lucide.createIcons();
+        };
 
         window.onload = iniciar;
     </script>
