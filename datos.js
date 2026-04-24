@@ -3,7 +3,7 @@
 const metas = [
     {
         id: 1,
-        meta: "Calidad de los laboratorios y equipamiento tecnológico",
+        meta: "Calidad de los laboratorios, equipamiento y gestión",
         descripcion: "Modernización de infraestructura tecnológica y digitalización.",
         iconName: "wifi",
         theme: "blue",
@@ -44,7 +44,7 @@ const metas = [
     },
     {
         id: 5,
-        meta: "Calidad de la gestión administrativa y financiera",
+        meta: "Calidad de la gestión financiera",
         descripcion: "Eficiencia en compras, inventarios y documentación.",
         iconName: "file-text",
         iconColor: "text-gray-600",
@@ -64,7 +64,7 @@ const metas = [
     },
     {
         id: 7,
-        meta: "Calidad Académica y mejora de la gestión",
+        meta: "Calidad académica y mejora de la gestión",
         descripcion: "Excelencia en los procesos de enseñanza y aprendizaje.",
         iconName: "graduation-cap",
         theme: "indigo",
@@ -105,7 +105,7 @@ const metas = [
     },
     {
         id: 11,
-        meta: "Incrementar el sentido de pertenencia en ITSC",
+        meta: "Incrementar el sentido de pertenencia en los miembros de la comunidad ITSC",
         descripcion: "Fomento de la identidad y cultura institucional.",
         iconName: "heart",
         iconColor: "text-rose-600",
@@ -115,7 +115,7 @@ const metas = [
     },
     {
         id: 12,
-        meta: "Disminuir la deserción a un 15%",
+        meta: "Disminuir la deserción de estudiantes en un 15%",
         descripcion: "Estrategias de retención y acompañamiento estudiantil.",
         iconName: "user-minus",
         iconColor: "text-amber-600",
@@ -125,7 +125,7 @@ const metas = [
     },
     {
         id: 13,
-        meta: "Aumentar ingreso de Estudiantes a 8,000",
+        meta: "Aumentar el ingreso de estudiantes para lograr población activa de 9,000 a diciembre de 2026",
         descripcion: "Captación y matriculación de nuevos alumnos.",
         iconName: "user-plus",
         iconColor: "text-emerald-600",
@@ -135,7 +135,7 @@ const metas = [
     },
     {
         id: 14,
-        meta: "Aumento del presupuesto en 80%",
+        meta: "Aumentar el presupuesto en un 80%",
         descripcion: "Gestión de recursos y eficiencia financiera.",
         iconName: "pie-chart",
         iconColor: "text-slate-600",
@@ -144,7 +144,7 @@ const metas = [
 
     },{
         id: 15,
-        meta: "Calida en los servicios que se ofrecen",
+        meta: "Calidad académica y mejora de la gestión",
         descripcion: "Mejora continua en atención y soporte.",
         iconName: "cog",
         iconColor: "text-yellow-600",

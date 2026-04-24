@@ -33,8 +33,8 @@ def excel_to_json(excel_file, output_file=None):
 # Example usage
 if __name__ == "__main__":
     # Replace with your Excel file path
-    excel_path = "C:/Users/lafon/OneDrive/Documentos/mETA_PRODUCTO.xlsx"
-    json_path = "C:/Users/lafon/OneDrive/Documentos/ITSC/resumenTIC/mETA_PRODUCTO.json"
+    excel_path = "C:/Users/DIAT/OneDrive - Instituto Técnico Superior Comunitario/Documents/PoaData.xlsx"
+    json_path = "C:\\Users\\DIAT\\OneDrive - Instituto Técnico Superior Comunitario\\Documents\\ITSC\\resumenTIC.github.io\\mETA_PRODUCTO.json"
     
     json_output = excel_to_json(excel_path, json_path)
     print(json_output)

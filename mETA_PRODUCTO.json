@@ -1,704 +1,1333 @@
 [
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Actualización de equipos críticos (Diseño, Salud, Tech, producción eventos).",
-    "area": "Académica",
-    "costo": 28940763.0
+    "clave": "CAL-GES-FIN",
+    "producto": "Certificaciones DIGEPRES",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIF-FIN",
+    "area": "Financiera",
+    "Nivel": 7,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de la educación virtual",
-    "producto": "Actualización de planes de estudio y compendios alineados a MNC Nivel 5.",
-    "area": "Académica",
-    "costo": 13530000.0
+    "clave": "CAL-GES-FIN",
+    "producto": "Monitoreos al IG",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIF-FIN",
+    "area": "Financiera",
+    "Nivel": 4,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Agilización de validación de expedientes y ceremonias.\n",
-    "area": "Académica",
-    "costo": 8000000.0
+    "clave": "TRANSP",
+    "producto": "Remisión de reporte a transparencias de la meta programática.",
+    "meta": "Transparencia de la gestión",
+    "codigo": "DIF-FIN",
+    "area": "Financiera",
+    "Nivel": 12,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Aseguramiento de materiales gastables para talleres prácticos.",
-    "area": "Académica",
-    "costo": 22883564.0
-  },
-  {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Campus Inclusivo: Ajustes razonables NEE",
-    "area": "Académica",
-    "costo": 4500000.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Ciclo de acompañamiento y evaluación del desempeño docente.",
-    "area": "Académica",
-    "costo": 0.0
-  },
-  {
-    "meta": "Disminuir la deserción a un 15%",
-    "producto": "Detección e intervención de estudiantes en riesgo (asistencia/notas).",
-    "area": "Académica",
-    "costo": 0.0
-  },
-  {
-    "meta": "Aumentar ingreso de Estudiantes a 8,000",
-    "producto": "Estrategias de captación y simplificación de procesos de ingreso.",
-    "area": "Académica",
-    "costo": 2000000.0
-  },
-  {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Inicio del proceso de autoevaluación de carreras priorizadas.",
-    "area": "Académica",
-    "costo": 10395000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Innovación Educativa ABP e Industria 5.0",
-    "area": "Académica",
-    "costo": 3000000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento preventivo y correctivo de talleres.",
-    "area": "Académica",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calida en los servicios que se ofrecen",
-    "producto": "Mejora de atención, encuestas de servicio y bienestar.",
-    "area": "Académica",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Nuevo esquema de pago y carga académica (15 semanas + 30%).",
-    "area": "Académica",
-    "costo": 237317509.0
-  },
-  {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Programa de certificaciones internacionales (IBEC, Adobe, Python, ServSafe).",
-    "area": "Académica",
-    "costo": 4500450.0
-  },
-  {
-    "meta": "Aumentar ingreso de Estudiantes a 8,000",
-    "producto": "Promoción Académica: Ferias, congresos y eventos. Patrocinios",
-    "area": "Académica",
-    "costo": 4000000.0
-  },
-  {
-    "meta": "Calidad Académica y mejora de la gestión",
-    "producto": "Verificación de procesos académicos y administrativos.",
-    "area": "Académica",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Inventario de la documentación existente en el ITSC",
+    "clave": "TRANSP",
+    "producto": "Elaboración y aprobación de la Política de Compras y Contrataciones Institucional",
+    "meta": "Transparencia de la gestión",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Identificación de series documentales",
+    "clave": "FORT-INST",
+    "producto": "Elaborar el Cuadro de Clasificación Documental",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Elaboración del Cuadro de Clasificación Documental",
+    "clave": "FORT-INST",
+    "producto": "Elaborar el Inventario de la documentación existente en el ITSC",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Elaboración de la Tabla de Retención Documental",
+    "clave": "FORT-INST",
+    "producto": "Elaborar la Tabla de Valoración y Retención Documental ",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Ejecución de procesos según Ley 47-25 (Compras)",
+    "clave": "TRANSP",
+    "producto": "Expedientes con evidencias, informes, actas, evaluaciones y contratos archivados \ncorrectamente.",
+    "meta": "Transparencia de la gestión",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Gestión de expedientes de compras auditables",
+    "clave": "TRANSP",
+    "producto": "Fortalecimiento de la gestión de inventario y control de suministros institucionales",
+    "meta": "Transparencia de la gestión",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Política de Compras y Contrataciones Institucional",
+    "clave": "FORT-INST",
+    "producto": "Identificar las series documentales",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Optimización de servicios de transportación",
+    "clave": "FORT-INST",
+    "producto": "Optimizado el tiempo de respuesta en la prestación de servicios de transportación institucional, mediante el registro, seguimiento y control de solicitudes atendidas por tipo de servicio (traslado de personal, servicios administrativos, apoyo a actividades académicas y mantenimiento vehicular)",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Manual de Operaciones de Transportación",
+    "clave": "FORT-INST",
+    "producto": "Política y procedimientos  de Almacén y Suministro",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Fortalecimiento de gestión de inventario (Almacén)",
+    "clave": "FORT-INST",
+    "producto": "Política y procedimientos de Operaciones de Transportación",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Manual de Procesos de Almacén y Suministro",
+    "clave": "TRANSP",
+    "producto": "Procesos realizados según la nueva Ley 47-25 de compras y contrataciones, su reglamento y \nlineamientos del órgano rector.",
+    "meta": "Transparencia de la gestión",
+    "codigo": "DIR-ADM",
     "area": "Administrativa",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN ADMINISTRATIVA"
   },
   {
+    "clave": "CAL-COMUNIC",
+    "producto": "Blog Institucional",
     "meta": "Calidad de la comunicación",
-    "producto": "Blog Institucional ITSC",
+    "codigo": "Dircom",
     "area": "Comunicaciones",
-    "costo": 0.0
+    "Nivel": 5,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
   },
   {
+    "clave": "CAL-COMUNIC",
+    "producto": "Campaña 13 Aniversario",
     "meta": "Calidad de la comunicación",
-    "producto": "Campaña Aniversario –  13 de enero 2026",
+    "codigo": "DIR-COM",
     "area": "Comunicaciones",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
   },
   {
-    "meta": "Calidad de la comunicación",
+    "clave": "CAL-COMUNIC",
     "producto": "Campañas de Graduación",
+    "meta": "Calidad de la comunicación",
+    "codigo": "DIR-COM",
     "area": "Comunicaciones",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
   },
   {
-    "meta": "Calidad de la comunicación",
-    "producto": "Estrategia de Matrícula 2026",
-    "area": "Comunicaciones",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la comunicación",
+    "clave": "CAL-COMUNIC",
     "producto": "Comunicación Interna",
+    "meta": "Calidad de la comunicación",
+    "codigo": "DIR-COM",
     "area": "Comunicaciones",
-    "costo": 0.0
+    "Nivel": 10,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
   },
   {
+    "clave": "CAL-COMUNIC",
+    "producto": "Estrategia de Matrícula 2026",
     "meta": "Calidad de la comunicación",
+    "codigo": "DIR-COM",
+    "area": "Comunicaciones",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
+  },
+  {
+    "clave": "CAL-COMUNIC",
+    "producto": "Podcast Institucional y embajadores",
+    "meta": "Calidad de la comunicación",
+    "codigo": "DIR-COM",
+    "area": "Comunicaciones",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
+  },
+  {
+    "clave": "CAL-COMUNIC",
     "producto": "Producción Audiovisual",
-    "area": "Comunicaciones",
-    "costo": 0.0
-  },
-  {
     "meta": "Calidad de la comunicación",
-    "producto": "Podcast Institucional y Embajadores",
+    "codigo": "DIR-COM",
     "area": "Comunicaciones",
-    "costo": 0.0
+    "Nivel": 4,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE COMUNICACIONES"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Reportes mensuales al Portal de Transparencia",
+    "clave": "CAL-GES-FIN",
+    "producto": "Levantamiento de activos fijos",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIR-FIN",
     "area": "Financiera",
-    "costo": 0.0
+    "Nivel": 240,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Monitoreo del Indicador de Gestión Presupuestaria",
+    "clave": "CAL-GES-FIN",
+    "producto": "Reportes y Cumplimiento de normativas contables",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIR-FIN",
     "area": "Financiera",
-    "costo": 0.0
+    "Nivel": 4,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Certificaciones DIGEPRES para nuevo ingreso",
+    "clave": "CAL-GES-FIN",
+    "producto": "Rotulación de bienes",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIR-FIN",
     "area": "Financiera",
-    "costo": 0.0
+    "Nivel": 700,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Rotulación y registro de activos en SIAB",
+    "clave": "CAL-GES-FIN",
+    "producto": "Depósitos en cuenta operativa",
+    "meta": "Calidad de la gestión financiera",
+    "codigo": "DIR-FIN",
     "area": "Financiera",
-    "costo": 0.0
+    "Nivel": 12907100,
+    "tipo": "Unidad",
+    "costo": 12106799.26,
+    "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Levantamientos de activos fijos (DIGECOG)",
-    "area": "Financiera",
-    "costo": 0.0
+    "clave": "FORT-INST",
+    "producto": "Revisión de Contractos",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "DIR-JUR",
+    "area": "Jurídica",
+    "Nivel": 1000,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN JURÍDICA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Depósitos diarios de ingresos en Banreservas",
-    "area": "Financiera",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Cumplimiento de normativas contables",
-    "area": "Financiera",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Envío de reportes de cierre a entes reguladores",
-    "area": "Financiera",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Plan de Capacitación 2026",
-    "area": "Gestión Humana",
-    "costo": 10000000.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Plan de Mejora del Clima Organizacional",
-    "area": "Gestión Humana",
-    "costo": 4000000.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Sistema de Gestión Integral del Talento",
-    "area": "Gestión Humana",
-    "costo": 3607500.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Evaluación de Desempeño (SED)",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Programa de Salud Integral y Bienestar",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Pago de nómina a colaboradores",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Fortalecimiento de Evaluación de Competencias",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Selección y Contratación de Personal",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Inducción al Personal de Nuevo Ingreso",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la gestión humana",
-    "producto": "Acuerdos con Laboratorios (Exámenes)",
-    "area": "Gestión Humana",
-    "costo": 0.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Creado Centro de Prototipado",
-    "area": "I+D+i",
-    "costo": 6997825.68
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizada Feria de Innovación",
-    "area": "I+D+i",
-    "costo": 1000000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Plataforma Integral de Accesibilidad Educativa para Estudiantes con Discapacidad Auditiva del ITSC ",
-    "area": "I+D+i",
-    "costo": 800000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Desplegado Agente Inteligente de Asistencia Estudiantil",
-    "area": "I+D+i",
-    "costo": 600000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizada Feria de Emprendimiento del ITSC",
-    "area": "I+D+i",
-    "costo": 400000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizado Estudio del perfil Sociodemográfico del Distrito Municipal de San Luís y Santo Domingo Este",
-    "area": "I+D+i",
-    "costo": 250000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizado Estudio de Factibilidad para la producción y venta de maderas plásticas.",
-    "area": "I+D+i",
-    "costo": 250000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizado Estudio Diagnostico de los Niveles de Deserción en el ITSC",
-    "area": "I+D+i",
-    "costo": 250000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Realizada Competencia Interna de Emprendimiento del ITSC",
-    "area": "I+D+i",
-    "costo": 200000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Charlas formativas virtuales y talleres presenciales mensuales para estudiantes y la comunidad externa.",
-    "area": "I+D+i",
-    "costo": 200000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Diseñada y Publicada Revista de Innovación y Divulgación IDEA",
-    "area": "I+D+i",
-    "costo": 100000.0
-  },
-  {
-    "meta": "Consolidar el Ecosistema I+D+I+E",
-    "producto": "Capacitación a coordinadores_x000B_de áreas académicas sobre microcredenciales",
-    "area": "I+D+i",
-    "costo": 100000.0
-  },
-  {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Mantenimiento a generadores eléctrico",
     "meta": "Calidad de la infraestructura física",
-    "producto": "Adquisición de Aires Acondicionados industriales",
+    "codigo": "DIR-MANT",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 80000000.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 800000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Registros recolectores de agua pluvial",
     "meta": "Calidad de la infraestructura física",
-    "producto": "Adquisición de equipos diversos (Camión, ascensores)",
+    "codigo": "DIR-MANT",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 13500000.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 1500000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento transformadores y seccionadoras",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 8200000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento equipos de cocina",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 6500000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Adquisición de materiales de limpieza y mantenimiento",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 3000000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Materiales y herramientas para personal técnico",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 3000000.0
-  },
-  {
-    "meta": "Calidad de la infraestructura física",
+    "clave": "CAL-INFR-FIS",
     "producto": "Mantenimiento planta de tratamiento",
-    "area": "Infraestructura y Mantenimiento",
-    "costo": 1800000.0
-  },
-  {
     "meta": "Calidad de la infraestructura física",
-    "producto": "Construcción de garita de seguridad",
+    "codigo": "DIR-MANT",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 1800000.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 1800000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Remozamiento de la Garita de seguridad",
     "meta": "Calidad de la infraestructura física",
-    "producto": "Construcción de registros pluviales",
+    "codigo": "DIR-MANT",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 1500000.0
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 1800000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Materiales y herramientas",
     "meta": "Calidad de la infraestructura física",
-    "producto": "Mantenimiento de generadores eléctricos",
+    "codigo": "DIR-MANT",
     "area": "Infraestructura y Mantenimiento",
-    "costo": 800000.0
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 3000000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Servicios notariales y contratos de compras",
-    "area": "Jurídica",
-    "costo": 354000.0
+    "clave": "CAL-INFR-FIS",
+    "producto": "Plan de adquisición de equipo de limpieza y materiales.",
+    "meta": "Calidad de la infraestructura física",
+    "codigo": "DIR-MANT",
+    "area": "Infraestructura y Mantenimiento",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 3000000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Servicios judiciales (Alguacil, certificaciones)",
-    "area": "Jurídica",
-    "costo": 120000.0
+    "clave": "CAL-INFR-FIS",
+    "producto": "Mantenimiento a equipos de cocina",
+    "meta": "Calidad de la infraestructura física",
+    "codigo": "DIR-MANT",
+    "area": "Infraestructura y Mantenimiento",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 6500000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
   },
   {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Mantenimiento transformadores",
+    "meta": "Calidad de la infraestructura física",
+    "codigo": "DIR-MANT",
+    "area": "Infraestructura y Mantenimiento",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 8200000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
+  },
+  {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Plan de adquisición de Equipamiento, diversos",
+    "meta": "Calidad de la infraestructura física",
+    "codigo": "DIR-MANT",
+    "area": "Infraestructura y Mantenimiento",
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 13500000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
+  },
+  {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Plan de acondicionamiento de aires acondicionados",
+    "meta": "Calidad de la infraestructura física",
+    "codigo": "DIR-MANT",
+    "area": "Infraestructura y Mantenimiento",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 80000000.0,
+    "Nombre": "DIRECCIÓN DE INFRAESTRUCTURA"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Servicios de protocolo",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-PRO",
+    "area": "Protocolo",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 350000.0,
+    "Nombre": "DIRECCIÓN DE PROTOCOLO"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Coordinados los eventos",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-PRO",
+    "area": "Protocolo",
+    "Nivel": 16,
+    "tipo": "Unidad",
+    "costo": 1186600.0,
+    "Nombre": "DIRECCIÓN DE PROTOCOLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Análisis Escala Salarial.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Coordinar la formulación del Plan Operativo Anual (POA) 2027.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Elaborar el Plan Anual de Compras y Contrataciones.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Estandarización de Procesos.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 0.6,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Formular el anteproyecto de Presupuesto 2027.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Índice de Control Interno.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 0.8,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Índice de Gestión Presupuestaria.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 4,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Informes del PEI 2025-2028",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Manual de funciones.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Memorias Institucionales.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Monitoreo de la Calidad de los Servicios.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Sistema Monitoreo MAP.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 0.9,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-PLANIF",
+    "producto": "Soporte en Cooperación Intl.",
+    "meta": "Calidad de la planificación en todas las áreas",
+    "codigo": "DIR-PYD",
+    "area": "Planificación",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE PLANIFICACIÓN Y DESARROLLO"
+  },
+  {
+    "clave": "CAL-GES-HUM",
+    "producto": "Acuerdos con laboratorio",
     "meta": "Calidad de la gestión humana",
-    "producto": "Elaboración y revisión de contratos docentes",
-    "area": "Jurídica",
-    "costo": 0.0
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 20,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Representación en procesos legales",
-    "area": "Jurídica",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Cumplimiento oportuno en pago a colaboradores",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 12,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Mejora de servicios de entrega de información (Ley 200-04)",
-    "area": "OAI",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Evaluación por competencias",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 60,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Gestión del Portal de Transparencia (Res. 002-2021)",
-    "area": "OAI",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Inducción a personal de nuevo ingreso",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 30,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Fomento de la Transparencia y Ética Institucional",
-    "area": "OAI",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Programa de Salud integral y bienestar",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 3,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Informes trimestrales de monitoreo PEI 2025-2028",
-    "area": "Planificación",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Selección y contratación de personal",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 60,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Documentación y estandarización del 60% de procesos",
-    "area": "Planificación",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Sistema Evaluación Desempeño",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Diagnóstico organizacional y Manual de Funciones (MOF)",
-    "area": "Planificación",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Plan de  gestión del talento y bienestar organizacional",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 3607500.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Formulación Anteproyecto Presupuesto Plurianual 2027",
-    "area": "Planificación",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Plan mejora clima organizacional",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 4000000.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la gestión administrativa y financiera",
-    "producto": "Elaboración del Plan Anual de Compras (PACC) 2027",
-    "area": "Planificación",
-    "costo": 0.0
+    "clave": "CAL-GES-HUM",
+    "producto": "Capacitación del personal",
+    "meta": "Calidad de la gestión humana",
+    "codigo": "DIR-RRH",
+    "area": "Gestión Humana",
+    "Nivel": 32,
+    "tipo": "Número",
+    "costo": 10000000.0,
+    "Nombre": "DIRECCIÓN DE RECURSOS HUMANOS"
   },
   {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Formulación del Plan Operativo Anual (POA) 2027",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Cumplimiento NOBACI e Índice de Control Interno",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Monitoreo del Índice de Gestión Presupuestaria (IGP)",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Calificación ante SISMAP (MAP)",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Análisis de escala salarial y nivelación",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Encuestas de satisfacción (Carta Compromiso)",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de la planificación en todas las áreas",
-    "producto": "Consolidación de Memorias Institucionales (SAMI)",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Soporte en Acuerdos de Cooperación Internacional",
-    "area": "Planificación",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calida en los servicios que se ofrecen",
-    "producto": "Gestión y coordinación de eventos institucionales",
-    "area": "Protocolo",
-    "costo": 1186600.0
-  },
-  {
-    "meta": "Calida en los servicios que se ofrecen",
-    "producto": "Mejora de la calidad de servicios de protocolo",
-    "area": "Protocolo",
-    "costo": 350000.0
-  },
-  {
+    "clave": "CAL-INFR-FIS",
+    "producto": "Fortalecer el  servicio nocturno de vigilancia",
     "meta": "Calidad de la infraestructura física",
-    "producto": "Mejoramiento de la Seguridad (Videovigilancia y armamento)",
+    "codigo": "DIR-SEG",
     "area": "Seguridad",
-    "costo": 0.0
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE SEGURIDAD"
   },
   {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Remodelación de la Casa de Guardia (Entrada principal)",
+    "clave": "CAL-SERVS",
+    "producto": "Fortalecer seguridad ITSC el área perimetral",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-SEG",
     "area": "Seguridad",
-    "costo": 0.0
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE SEGURIDAD"
   },
   {
-    "meta": "Calidad de la infraestructura física",
-    "producto": "Aumento de personal nocturno y alambrada perimetral",
-    "area": "Seguridad",
-    "costo": 0.0
-  },
-  {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Infraestructura de Conectividad y Seguridad de Red",
+    "clave": "CAL-SERVS",
+    "producto": "Adecuación nuevos softwares y sistemas",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-TIC",
     "area": "Tecnología (TIC)",
-    "costo": 136000000.0
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "DIRECCIÓN DE TRANSFORMACIÓN DIGITAL"
   },
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Adecuación de equipos y licencias (Laboratorios)",
+    "clave": "CAL-SERVS",
+    "producto": "Restructuración de Data Center",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-TIC",
     "area": "Tecnología (TIC)",
-    "costo": 35000000.0
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 5000000.0,
+    "Nombre": "DIRECCIÓN DE TRANSFORMACIÓN DIGITAL"
   },
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
+    "clave": "CAL-SERVS",
     "producto": "Transformación digital de procesos",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "DIR-TIC",
     "area": "Tecnología (TIC)",
-    "costo": 25000000.0
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 25000000.0,
+    "Nombre": "DIRECCIÓN DE TRANSFORMACIÓN DIGITAL"
   },
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Optimización de Data Center Core",
+    "clave": "CAL-LAB-EQ-GES",
+    "producto": "Adecuación de equipos y  licencias",
+    "meta": "Calidad de los laboratorios, equipamiento y gestión",
+    "codigo": "DIR-TIC",
     "area": "Tecnología (TIC)",
-    "costo": 5000000.0
+    "Nivel": 0.8,
+    "tipo": "Porcentaje",
+    "costo": 35000000.0,
+    "Nombre": "DIRECCIÓN DE TRANSFORMACIÓN DIGITAL"
   },
   {
-    "meta": "Calidad de los laboratorios y equipamiento tecnológico",
-    "producto": "Desarrollo e implementación de nuevos software",
+    "clave": "CAL-LAB-EQ-GES",
+    "producto": "Infraestructura conectividad",
+    "meta": "Calidad de los laboratorios, equipamiento y gestión",
+    "codigo": "DIR-TIC",
     "area": "Tecnología (TIC)",
-    "costo": 0.0
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 136000000.0,
+    "Nombre": "DIRECCIÓN DE TRANSFORMACIÓN DIGITAL"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Creación de la escuela de baile ITSC y programación artística y cultural",
-    "area": "Vinculación",
-    "costo": 18000000.0
+    "clave": "TRANSP",
+    "producto": "Fomento de la ética y transparencia institucional",
+    "meta": "Transparencia de la gestión",
+    "codigo": "OAI",
+    "area": "OAI",
+    "Nivel": 9,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "OFICINA DE ACCESO A LA INFORMACIÓN"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de coordinación y ejecución de espacios para actividades deportivas",
-    "area": "Vinculación",
-    "costo": 8000000.0
+    "clave": "TRANSP",
+    "producto": "Gestionado el Portal de Transparencia Institucional, según la Resolución DIGEIG No. 002-2021",
+    "meta": "Transparencia de la gestión",
+    "codigo": "OAI",
+    "area": "OAI",
+    "Nivel": 0.9979,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "OFICINA DE ACCESO A LA INFORMACIÓN"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa marca ITSC y promoción institucional",
-    "area": "Vinculación",
-    "costo": 5000000.0
+    "clave": "TRANSP",
+    "producto": "Mejorada la calidad de los servicios ofrecidos en la entrega oportuna y veraz de información y atención ciudadana, según la Ley 200-04.",
+    "meta": "Transparencia de la gestión",
+    "codigo": "OAI",
+    "area": "OAI",
+    "Nivel": 4,
+    "tipo": "Unidad",
+    "costo": 0.0,
+    "Nombre": "OFICINA DE ACCESO A LA INFORMACIÓN"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de intercambios internacionales",
-    "area": "Vinculación",
-    "costo": 2500000.0
+    "clave": "CAL-SERVS",
+    "producto": "Clubes de lectura implementados",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa impulsa ITSC ",
-    "area": "Vinculación",
-    "costo": 1000000.0
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Compendios académicos y Rediseño ",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de vinculación y seguimiento de egresados ITSC",
-    "area": "Vinculación",
-    "costo": 1000000.0
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Diseño e implementación del Modelo Educativo",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "realización de ferias de empleabilidad",
-    "area": "Vinculación",
-    "costo": 1000000.0
+    "clave": "REDUC-DESER",
+    "producto": "Implementación de Sistema de apoyo al estudiante para la permanencia y progresión ",
+    "meta": "Disminuir la deserción de estudiantes en un 15%",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de vinculación con el sector productivo",
-    "area": "Vinculación",
-    "costo": 800000.0
+    "clave": "INGR-ESTUDS",
+    "producto": "Matricula de nuevo ingreso incrementada",
+    "meta": "Aumentar el ingreso de estudiantes para lograr población activa de 9,000 a diciembre de 2026",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
+    "clave": "ALIA-NAC-INTER",
+    "producto": "Mejores prácticas universitarias con sistemas penitenciarios internacionales",
     "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Realización de acuerdos de colaboración",
-    "area": "Vinculación",
-    "costo": 500000.0
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Fortalecimiento de la vinculación institucional",
-    "area": "Vinculación",
-    "costo": 300000.0
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Modelo Educativo (Programa Liderazgo)",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 600,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Programa de pasantías escolares",
-    "area": "Vinculación",
-    "costo": 150000.0
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Plan Acreditación ISO",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
-    "meta": "Fortalecer alianzas nacionales e internacionales",
-    "producto": "Realización de promoción y posicionamiento del ITSC",
-    "area": "Vinculación",
-    "costo": 0.0
+    "clave": "CAL-SERVS",
+    "producto": "Proyecto LEAMOS implementado",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
+    "clave": "CAL-SERVS",
+    "producto": "Puesta en marcha del uso de E-Libros ",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Sistema de turno, omnicanalidad ",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Técnicos Superiores de Calidad ",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "ALIA-NAC-INTER",
+    "producto": "Programa de liderazgo en coordinación CAF",
     "meta": "Fortalecer alianzas nacionales e internacionales",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 21000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Acreditación (tutorías) Internacional IBEC. ",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": "19 Docentes",
+    "tipo": "Unidad",
+    "costo": 179550.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-LAB-EQ-GES",
+    "producto": "Infraestructura y ambiente de aprendizaje del mantenimiento de los laboratorios",
+    "meta": "Calidad de los laboratorios, equipamiento y gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 840000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Certificaciones Internacionales a estudiantes\n",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 2500000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Formulación y acreditación internacional (Servsafe). ",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": "23 docentes ",
+    "tipo": "Unidad",
+    "costo": 3500000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Formación y acreditación internacional (IBEC).",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 559,
+    "tipo": "Unidad",
+    "costo": 3924900.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "ALIA-NAC-INTER",
+    "producto": "Inmersión y eventos académicos",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 4500000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "INGR-ESTUDS",
+    "producto": "Aumento ingreso población (9,000)",
+    "meta": "Aumentar el ingreso de estudiantes para lograr población activa de 9,000 a diciembre de 2026",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 16,
+    "tipo": "Número",
+    "costo": 5500000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Graduación",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 6331960.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-LAB-EQ-GES",
+    "producto": "Laboratorios bien administrados",
+    "meta": "Calidad de los laboratorios, equipamiento y gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 15000000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-EDU-VIRT",
+    "producto": "LLMS",
+    "meta": "Calidad de la educación virtual",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 15000000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-EDU-VIRT",
+    "producto": "LMS",
+    "meta": "Calidad de la educación virtual",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 15000000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-LAB-EQ-GES",
+    "producto": "Infraestructura y ambiente de aprendizaje ",
+    "meta": "Calidad de los laboratorios, equipamiento y gestión",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 19808211.14,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "CIS/SIS",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-ACD",
+    "area": "Académica",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 25000000.0,
+    "Nombre": "VICERRECTORÍA ACADÉMICA"
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Capacitación a coordinadores de áreas académicas sobre micro credenciales ",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 8,
+    "tipo": "Número",
+    "costo": 100000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "SENT-PERT",
+    "producto": "Diseñada y publicada la revista de innovación y divulgación de ideas",
+    "meta": "Incrementar el sentido de pertenencia en los miembros de la comunidad ITSC",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 100000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "SENT-PERT",
+    "producto": "Charlas formativas virtuales y talleres presenciales mensuales para estudiantes y la comunidad externa",
+    "meta": "Incrementar el sentido de pertenencia en los miembros de la comunidad ITSC",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 76,
+    "tipo": "Número",
+    "costo": 200000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Realizada la competencia interna de Emprendimiento del ITSC",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 200000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "REDUC-DESER",
+    "producto": "\nRealizado estudio diagnóstico de los niveles de deserción en el ITSC",
+    "meta": "Disminuir la deserción de estudiantes en un 15%",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 250000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Realizado estudio de factibilidad para la producción y venta de maderas plásticas.",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 250000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "SENT-PERT",
+    "producto": "Realizado estudio del perfil sociodemográfico del Distrito Municipal de San Luís y Santo Domingo Este",
+    "meta": "Incrementar el sentido de pertenencia en los miembros de la comunidad ITSC",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 250000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Desplegado agente inteligente de asistencia estudiantil",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 600000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Plataforma Integral de accesibilidad educativa para estudiantes con discapacidad auditiva del ITSC",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 800000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Realizada la feria de Innovación",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 1,
+    "tipo": "Unidad",
+    "costo": 1000000.0,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Centro de prototipado",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-IDI",
+    "area": "I+D+I",
+    "Nivel": 1,
+    "tipo": "Porcentaje",
+    "costo": 6997825.68,
+    "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
+  },
+  {
+    "clave": "CAL-SERVS",
     "producto": "Programa de pasantías universitarias",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
     "area": "Vinculación",
-    "costo": 0.0
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Realización de promoción y posicionamiento del ITSC",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 6,
+    "tipo": "Número",
+    "costo": 0.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "INGR-ESTUDS",
+    "producto": "Programa de pasantías escolares",
+    "meta": "Aumentar el ingreso de estudiantes para lograr población activa de 9,000 a diciembre de 2026",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 25,
+    "tipo": "Número",
+    "costo": 150000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "\nFortalecimiento de la Vinculación Institucional",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 300000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "ALIA-NAC-INTER",
+    "producto": "Realización de acuerdos de colaboración",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 4,
+    "tipo": "Número",
+    "costo": 500000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Programa de vinculación con el sector productivo",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 20,
+    "tipo": "Unidad",
+    "costo": 800000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "\nRealización de ferias de empleabilidad",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 3,
+    "tipo": "Unidad",
+    "costo": 1000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Programa de vinculación y seguimiento de egresados ITSC",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 9,
+    "tipo": "Número",
+    "costo": 1000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-ACAD-MGES",
+    "producto": "Programa IMPULSA ITSC",
+    "meta": "Calidad académica y mejora de la gestión",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 6,
+    "tipo": "Número",
+    "costo": 1000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "ALIA-NAC-INTER",
+    "producto": "Programa de intercambios internacionales",
+    "meta": "Fortalecer alianzas nacionales e internacionales",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 1,
+    "tipo": "Número",
+    "costo": 2500000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "FORT-INST",
+    "producto": "Programa Marca ITSC y Promoción Institucional",
+    "meta": "Fortalecimiento Institucional",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 3,
+    "tipo": "Número",
+    "costo": 5000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Programa de coordinación y ejecución de espacios para actividades deportivas",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 2,
+    "tipo": "Número",
+    "costo": 8000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
+  },
+  {
+    "clave": "CAL-SERVS",
+    "producto": "Creación de la escuela de Baile ITSC y programación Artística Cultural",
+    "meta": "Calidad de los servicios que se ofrecen",
+    "codigo": "VR-VEX",
+    "area": "Vinculación",
+    "Nivel": 16,
+    "tipo": "Número",
+    "costo": 18000000.0,
+    "Nombre": "VICERRECTORÍA VINCULACIÓN Y EXTENSIÓN"
   }
 ]
