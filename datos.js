@@ -135,7 +135,7 @@ const metas = [
     },
     {
         id: 14,
-        meta: "Aumentar el presupuesto en un 80%",
+        meta: "Fortalecimiento Institucional",
         descripcion: "Gestión de recursos y eficiencia financiera.",
         iconName: "pie-chart",
         iconColor: "text-slate-600",
@@ -144,7 +144,7 @@ const metas = [
 
     },{
         id: 15,
-        meta: "Calidad académica y mejora de la gestión",
+        meta: "Calidad de los servicios que se ofrecen",
         descripcion: "Mejora continua en atención y soporte.",
         iconName: "cog",
         iconColor: "text-yellow-600",

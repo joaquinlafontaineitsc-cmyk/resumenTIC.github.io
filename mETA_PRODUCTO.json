@@ -271,7 +271,7 @@
     "area": "Financiera",
     "Nivel": 12907100,
     "tipo": "Unidad",
-    "costo": 12106799.26,
+    "costo": 12106799,
     "Nombre": "DIRECCIÓN FINANCIERA"
   },
   {
@@ -1052,7 +1052,7 @@
     "area": "Académica",
     "Nivel": 4,
     "tipo": "Número",
-    "costo": 19808211.14,
+    "costo": 19808211,
     "Nombre": "VICERRECTORÍA ACADÉMICA"
   },
   {
@@ -1184,7 +1184,7 @@
     "area": "I+D+I",
     "Nivel": 1,
     "tipo": "Porcentaje",
-    "costo": 6997825.68,
+    "costo": 6997825,
     "Nombre": "VICERRECTORÍA INVESTIGACIÓN DESARROLLO E INNOVACIÓN "
   },
   {
