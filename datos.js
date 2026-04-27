@@ -150,7 +150,16 @@ const metas = [
         iconColor: "text-yellow-600",
         color: "border-l-4 border-yellow-500",
         bgColor: "bg-yellow-50",
+    },{
+        id: 16,
+        meta: "Transparencia de la gestión",
+        descripcion: "Promoción de la ética, rendición de cuentas y libre acceso a la información.",
+        iconName: "search",
+        iconColor: "text-sky-600",
+        color: "border-l-4 border-sky-500",
+        bgColor: "bg-sky-50"
     }
+
 ];
 
 const llamar = async (dirreccion) => {
